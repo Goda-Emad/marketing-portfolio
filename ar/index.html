@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f33">
   <title>Goda Emad | أخصائي تسويق رقمي وتحليل بيانات</title>
   <meta name="description" content="معرض أعمال Goda Emad: أخصائي تسويق رقمي قائم على البيانات. تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، وحملات التجارة الإلكترونية.">
   <!-- TODO: confirm canonical URL after publishing -->
@@ -11,32 +12,31 @@
   <link rel="alternate" hreflang="en" href="https://goda-emad.github.io/marketing-portfolio/">
   <link rel="alternate" hreflang="ar" href="https://goda-emad.github.io/marketing-portfolio/ar/">
   <link rel="alternate" hreflang="x-default" href="https://goda-emad.github.io/marketing-portfolio/">
-
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_AR">
   <meta property="og:title" content="Goda Emad | أخصائي تسويق رقمي وتحليل بيانات">
   <meta property="og:description" content="أحوّل بيانات الحملات إلى قرارات تسويقية. تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، والتجارة الإلكترونية.">
-  <!-- TODO: add assets/img/og-image.jpg (1200x630). Absolute URL is used on purpose for social crawlers. -->
+  <!-- TODO: add assets/img/og-image.jpg (1200x630) -->
   <meta property="og:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
   <meta property="og:url" content="https://goda-emad.github.io/marketing-portfolio/ar/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Goda Emad | أخصائي تسويق رقمي وتحليل بيانات">
   <meta name="twitter:description" content="أحوّل بيانات الحملات إلى قرارات تسويقية.">
   <meta name="twitter:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
-
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=2">
+  <link rel="stylesheet" href="../assets/css/rtl.css?v=2">
 </head>
 <body>
   <a class="skip" href="#main">الانتقال إلى المحتوى</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container bar">
-      <a class="brand" href="#top" lang="en" aria-label="Goda Emad، الصفحة الرئيسية">Goda Emad</a>
+      <a class="brand" href="#top" lang="en" aria-label="Goda Emad، الصفحة الرئيسية"><span class="logo" aria-hidden="true">G</span>Goda Emad</a>
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="فتح القائمة" data-label-open="فتح القائمة" data-label-close="إغلاق القائمة">
         <span></span><span></span><span></span>
       </button>
@@ -60,6 +60,9 @@
         <p class="eyebrow">أخصائي تسويق رقمي وتحليل بيانات · القاهرة الجديدة، مصر</p>
         <h1>أحوّل بيانات الحملات إلى قرارات تسويقية.</h1>
         <p class="lead">أخصائي تسويق رقمي قائم على البيانات: تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، وحملات التجارة الإلكترونية.</p>
+        <ul class="tags" aria-label="الأدوات الأساسية" lang="en" dir="ltr">
+          <li>Power BI</li><li>Excel</li><li>Google Flow</li><li>Salla</li>
+        </ul>
         <div class="actions">
           <a class="btn" href="#work">شاهد أعمالي</a>
           <!-- TODO: confirm WhatsApp number -->
@@ -68,7 +71,7 @@
           <a class="btn btn-outline" href="../assets/cv/Goda_Emad_CV.pdf" download>تحميل السيرة الذاتية</a>
         </div>
         <ul class="stats" aria-label="معلومات رئيسية">
-          <li><strong>سنتان ونصف</strong><span>من الخبرة في تحليل التسويق لدى <bdi lang="en">3M4Media</bdi></span></li>
+          <li><strong>خبرة</strong><span>في تحليل التسويق لدى <bdi lang="en">3M4Media</bdi></span></li>
           <li><strong>4</strong><span>إعلانات فيديو بالذكاء الاصطناعي</span></li>
           <li><strong>3</strong><span>شهادات مهنية (<bdi lang="en">PL-300</bdi>، <bdi lang="en">Google Data Analytics</bdi>، <bdi lang="en">IBM AI Engineering</bdi>)</span></li>
         </ul>
@@ -78,10 +81,11 @@
     <!-- 2. FEATURED WORK -->
     <section id="work" class="section reveal" aria-labelledby="work-h">
       <div class="container">
+        <p class="kicker">01 · الأعمال</p>
         <h2 id="work-h">أعمال مميزة: إعلانات فيديو بالذكاء الاصطناعي</h2>
         <p class="sub">صُنعت باستخدام <bdi lang="en">Google Flow</bdi>. مشاريع شخصية لمعرض الأعمال.</p>
         <div class="grid video-grid">
-          <!-- TODO for each card: set data-video to the YouTube video ID, and add a thumbnail image in ../assets/img/ (replace the .thumb div with <img src="../assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy">) -->
+          <!-- TODO per card: set data-video to the YouTube video ID; replace .thumb div with <img src="../assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
           <article class="card video-card">
             <div class="thumb" role="img" aria-label="مكان الصورة المصغرة: إعلانات منتجات على TikTok"><span>صورة مصغرة</span></div>
             <div class="card-body">
@@ -125,6 +129,7 @@
     <!-- 3. CASE STUDY -->
     <section id="case-study" class="section alt reveal" aria-labelledby="cs-h">
       <div class="container">
+        <p class="kicker">02 · دراسة حالة</p>
         <h2 id="cs-h">دراسة حالة: متجر دروبشيبينغ على <bdi lang="en">Salla</bdi></h2>
         <p class="sub">06/2026 · بُني وأُطلق خلال 14 يومًا</p>
         <div class="cs-grid">
@@ -134,7 +139,7 @@
           </div>
           <div class="cs-block">
             <h3>ما قمت به</h3>
-            <ul>
+            <ol class="steps">
               <li>إعداد المتجر: ربط النطاق، وبوابات الدفع، وشركات الشحن.</li>
               <li>الهوية البصرية: الشعار، ولوحة الألوان، ولافتات الصفحة الرئيسية. وتخصيص القالب لتجربة استخدام سلسة (<bdi lang="en">UX/UI</bdi>).</li>
               <li>بحث المنتجات والموردين باستخدام تطبيقات تدعمها <bdi lang="en">Salla</bdi>.</li>
@@ -142,7 +147,7 @@
               <li>خطة تسويقية وكتابة نصوص إعلانية.</li>
               <li>حملات مدفوعة على وسائل التواصل الاجتماعي.</li>
               <li>تتبّع الأداء (<bdi lang="en">ROAS</bdi> ومعدل التحويل) والتحسين المستمر.</li>
-            </ul>
+            </ol>
           </div>
           <div class="cs-block outcome">
             <h3>النتيجة</h3>
@@ -150,7 +155,7 @@
             <!-- TODO: add real numbers here (orders, ROAS) only if you have them. Do not estimate. -->
           </div>
         </div>
-        <!-- TODO: replace the 3 placeholders with real Salla screenshots, e.g. <img src="../assets/img/salla-1.jpg" alt="الصفحة الرئيسية لمتجر Salla" width="600" height="400" loading="lazy"> -->
+        <!-- TODO: replace placeholders with real Salla screenshots, e.g. <img src="../assets/img/salla-1.jpg" alt="الصفحة الرئيسية لمتجر Salla" width="600" height="400" loading="lazy"> -->
         <div class="gallery" aria-label="لقطات شاشة للمتجر">
           <div class="shot" role="img" aria-label="مكان مؤقت للقطة الشاشة 1"><span>لقطة شاشة 1</span></div>
           <div class="shot" role="img" aria-label="مكان مؤقت للقطة الشاشة 2"><span>لقطة شاشة 2</span></div>
@@ -162,6 +167,7 @@
     <!-- 4. ANALYTICS -->
     <section id="analytics" class="section reveal" aria-labelledby="an-h">
       <div class="container">
+        <p class="kicker">03 · التحليلات</p>
         <h2 id="an-h">التحليلات ولوحات المعلومات</h2>
         <p class="sub">مشاريع داعمة.</p>
         <div class="grid two">
@@ -189,6 +195,7 @@
     <!-- 5. EXPERIENCE -->
     <section id="experience" class="section alt reveal" aria-labelledby="ex-h">
       <div class="container">
+        <p class="kicker">04 · الخبرة</p>
         <h2 id="ex-h">الخبرة</h2>
         <ol class="timeline">
           <li>
@@ -220,6 +227,7 @@
     <!-- 6. SKILLS -->
     <section id="skills" class="section reveal" aria-labelledby="sk-h">
       <div class="container">
+        <p class="kicker">05 · المهارات</p>
         <h2 id="sk-h">المهارات والأدوات</h2>
         <div class="skill-groups">
           <div>
@@ -253,6 +261,7 @@
     <!-- 7. CERTIFICATIONS -->
     <section id="certs" class="section alt reveal" aria-labelledby="ce-h">
       <div class="container">
+        <p class="kicker">06 · الشهادات</p>
         <h2 id="ce-h">الشهادات</h2>
         <ul class="certs">
           <li><span lang="en" dir="ltr">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>يوليو 2026</time></li>
@@ -267,6 +276,7 @@
     <!-- 8. CONTACT -->
     <section id="contact" class="section contact reveal" aria-labelledby="co-h">
       <div class="container">
+        <p class="kicker">07 · تواصل</p>
         <h2 id="co-h">تواصل</h2>
         <p class="lead">متاح لوظائف أخصائي التسويق في المملكة العربية السعودية.</p>
         <p class="sub">اللغات: العربية (اللغة الأم)، الإنجليزية (كفاءة مهنية في العمل).</p>
@@ -283,15 +293,14 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container foot">
       <p>© <span id="year">2026</span> <bdi lang="en">Goda Emad</bdi></p>
+      <a href="#top">العودة للأعلى ↑</a>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp (mobile) -->
   <a class="fab" href="https://wa.me/201126242932" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب</a>
 
-  <!-- Video modal: iframe is created only on click -->
   <dialog id="videoModal" aria-labelledby="modalTitle">
     <div class="modal-head">
       <h3 id="modalTitle"></h3>
@@ -300,6 +309,6 @@
     <div class="modal-body" id="modalBody" data-soon="الفيديو قريبًا."></div>
   </dialog>
 
-  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/main.js?v=2" defer></script>
 </body>
 </html>
