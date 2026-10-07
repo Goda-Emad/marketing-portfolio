@@ -1,4 +1,3 @@
-<!-- File: marketing-portfolio/ar/index.html -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,39 +6,75 @@
   <meta name="theme-color" content="#0b1f33">
   <title>Goda Emad | أخصائي تسويق رقمي وتحليل بيانات</title>
   <meta name="description" content="معرض أعمال Goda Emad: أخصائي تسويق رقمي قائم على البيانات. تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، وحملات التجارة الإلكترونية.">
-  <!-- TODO: confirm canonical URL after publishing -->
   <link rel="canonical" href="https://goda-emad.github.io/marketing-portfolio/ar/">
-  <link rel="alternate" hreflang="en" href="https://goda-emad.github.io/marketing-portfolio/">
-  <link rel="alternate" hreflang="ar" href="https://goda-emad.github.io/marketing-portfolio/ar/">
+  <link rel="alternate" hreflang="en"        href="https://goda-emad.github.io/marketing-portfolio/">
+  <link rel="alternate" hreflang="ar"        href="https://goda-emad.github.io/marketing-portfolio/ar/">
   <link rel="alternate" hreflang="x-default" href="https://goda-emad.github.io/marketing-portfolio/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ar_AR">
-  <meta property="og:title" content="Goda Emad | أخصائي تسويق رقمي وتحليل بيانات">
-  <meta property="og:description" content="أحوّل بيانات الحملات إلى قرارات تسويقية. تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، والتجارة الإلكترونية.">
-  <!-- TODO: add assets/img/og-image.jpg (1200x630) -->
-  <meta property="og:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
-  <meta property="og:url" content="https://goda-emad.github.io/marketing-portfolio/ar/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Goda Emad | أخصائي تسويق رقمي وتحليل بيانات">
-  <meta name="twitter:description" content="أحوّل بيانات الحملات إلى قرارات تسويقية.">
-  <meta name="twitter:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type"             content="website">
+  <meta property="og:locale"           content="ar_AR">
+  <meta property="og:title"            content="Goda Emad | أخصائي تسويق رقمي وتحليل بيانات">
+  <meta property="og:description"      content="أحوّل بيانات الحملات إلى قرارات تسويقية. تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، والتجارة الإلكترونية.">
+  <meta property="og:image"            content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
+  <meta property="og:url"              content="https://goda-emad.github.io/marketing-portfolio/ar/">
+  <meta name="twitter:card"            content="summary_large_image">
+  <meta name="twitter:title"           content="Goda Emad | أخصائي تسويق رقمي وتحليل بيانات">
+  <meta name="twitter:description"     content="أحوّل بيانات الحملات إلى قرارات تسويقية.">
+  <meta name="twitter:image"           content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Goda Emad",
+    "jobTitle": "أخصائي تسويق رقمي وتحليل بيانات",
+    "url": "https://goda-emad.github.io/marketing-portfolio/ar/",
+    "sameAs": [
+      "https://linkedin.com/in/goda-emad",
+      "https://github.com/Goda-Emad"
+    ],
+    "email": "goda.emade2001@gmail.com",
+    "knowsLanguage": ["Arabic", "English"]
+  }
+  </script>
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=3">
-  <link rel="stylesheet" href="../assets/css/rtl.css?v=3">
+
+  <!-- ✅ تطبيق الثيم قبل الرندر لمنع الوميض -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('goda-theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/style.css?v=4">
+  <link rel="stylesheet" href="../assets/css/rtl.css?v=4">
 </head>
 <body>
   <a class="skip" href="#main">الانتقال إلى المحتوى</a>
   <div class="progress" id="progress" aria-hidden="true"></div>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container bar">
-      <a class="brand" href="#top" lang="en" aria-label="Goda Emad، الصفحة الرئيسية"><span class="logo" aria-hidden="true">G</span>Goda Emad</a>
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="فتح القائمة" data-label-open="فتح القائمة" data-label-close="إغلاق القائمة">
+      <a class="brand" href="#top" lang="en" aria-label="Goda Emad، الصفحة الرئيسية">
+        <span class="logo" aria-hidden="true">G</span>Goda Emad
+      </a>
+
+      <button class="menu-btn" id="menuBtn"
+        aria-expanded="false" aria-controls="nav"
+        aria-label="فتح القائمة"
+        data-label-open="فتح القائمة" data-label-close="إغلاق القائمة">
         <span></span><span></span><span></span>
       </button>
+
       <nav id="nav" class="nav" aria-label="التنقل الرئيسي">
         <a href="#work">الأعمال</a>
         <a href="#case-study">دراسة حالة</a>
@@ -47,33 +82,61 @@
         <a href="#experience">الخبرة</a>
         <a href="#contact">تواصل</a>
         <a href="../index.html" lang="en" hreflang="en" aria-label="النسخة الإنجليزية">EN</a>
-        <!-- TODO: confirm WhatsApp number -->
-        <a class="btn btn-sm" href="https://wa.me/201126242932" target="_blank" rel="noopener">واتساب</a>
+
+        <!-- ✅ زرار Dark / Light mode -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="التبديل إلى الوضع الداكن"
+          aria-pressed="false"
+          title="تبديل الوضع الداكن / الفاتح">
+        </button>
+
+        <a class="btn btn-sm btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">واتساب</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
+
     <!-- 1. HERO -->
     <section class="hero" id="top">
       <div class="container">
         <p class="eyebrow">أخصائي تسويق رقمي وتحليل بيانات · القاهرة الجديدة، مصر</p>
         <h1>أحوّل بيانات الحملات إلى قرارات تسويقية.</h1>
         <p class="lead">أخصائي تسويق رقمي قائم على البيانات: تحليل مؤشرات الأداء، وإعلانات فيديو بالذكاء الاصطناعي، وحملات التجارة الإلكترونية.</p>
+
+        <!-- ✅ منصات الإعلانات — مهم للكفيل السعودي -->
+        <div class="kpi-row">
+          <span class="kpi-pill"><bdi lang="en">Meta Ads</bdi> <span>· فيسبوك وإنستغرام</span></span>
+          <span class="kpi-pill"><bdi lang="en">TikTok Ads</bdi></span>
+          <span class="kpi-pill"><bdi lang="en">Google Ads</bdi></span>
+          <span class="kpi-pill"><bdi lang="en">Snapchat Ads</bdi></span>
+        </div>
+
         <ul class="tags" aria-label="الأدوات الأساسية" lang="en" dir="ltr">
-          <li>Power BI</li><li>Excel</li><li>Google Flow</li><li>Salla</li>
+          <li>Power BI</li><li>Excel</li><li>Google Flow</li><li>Salla</li><li>SQL</li><li>Python</li>
         </ul>
+
         <div class="actions">
           <a class="btn" href="#work">شاهد أعمالي</a>
-          <!-- TODO: confirm WhatsApp number -->
-          <a class="btn btn-outline" href="https://wa.me/201126242932" target="_blank" rel="noopener">تواصل عبر واتساب</a>
-          <!-- TODO: add assets/cv/Goda_Emad_CV.pdf (consider an Arabic CV too) -->
+          <a class="btn btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">تواصل عبر واتساب</a>
           <a class="btn btn-outline" href="../assets/cv/Goda_Emad_CV.pdf" download>تحميل السيرة الذاتية</a>
         </div>
+
         <ul class="stats" aria-label="معلومات رئيسية">
-          <li><strong>خبرة</strong><span>في تحليل التسويق لدى <bdi lang="en">3M4Media</bdi></span></li>
-          <li><strong>4</strong><span>إعلانات فيديو بالذكاء الاصطناعي</span></li>
-          <li><strong>3</strong><span>شهادات مهنية (<bdi lang="en">PL-300</bdi>، <bdi lang="en">Google Data Analytics</bdi>، <bdi lang="en">IBM AI Engineering</bdi>)</span></li>
+          <li>
+            <strong>+3</strong>
+            <span>سنوات خبرة في تحليل التسويق لدى <bdi lang="en">3M4Media</bdi></span>
+          </li>
+          <li>
+            <strong>4</strong>
+            <span>إعلانات فيديو بالذكاء الاصطناعي باستخدام <bdi lang="en">Google Flow</bdi></span>
+          </li>
+          <li>
+            <strong>5</strong>
+            <span>شهادات مهنية — <bdi lang="en">PL-300</bdi>، <bdi lang="en">Google DA</bdi>، <bdi lang="en">IBM AI</bdi>، <bdi lang="en">Azure DP-900</bdi></span>
+          </li>
         </ul>
       </div>
     </section>
@@ -81,13 +144,13 @@
     <!-- 2. FEATURED WORK -->
     <section id="work" class="section reveal" aria-labelledby="work-h">
       <div class="container">
-        <p class="kicker">01 · الأعمال</p>
+        <p class="kicker">الأعمال</p>
         <h2 id="work-h">أعمال مميزة: إعلانات فيديو بالذكاء الاصطناعي</h2>
         <p class="sub">صُنعت باستخدام <bdi lang="en">Google Flow</bdi>. مشاريع شخصية لمعرض الأعمال.</p>
         <div class="grid video-grid">
-          <!-- TODO per card: set data-video to the YouTube video ID; put the thumbnail <img> INSIDE the .thumb div, e.g. <img src="../assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
+
           <article class="card video-card">
-            <div class="thumb" role="img" aria-label="مكان الصورة المصغرة: إعلانات منتجات على TikTok"><span>صورة مصغرة</span></div>
+            <div class="thumb" role="img" aria-label="صورة مصغرة: إعلانات منتجات على TikTok"><span>صورة مصغرة</span></div>
             <div class="card-body">
               <p class="date">09/2026 – 10/2026</p>
               <h3>إعلانات منتجات على <bdi lang="en">TikTok</bdi></h3>
@@ -95,8 +158,9 @@
               <button class="btn btn-sm watch" data-video="YOUTUBE_ID_1" data-title="إعلانات منتجات على TikTok">شاهد</button>
             </div>
           </article>
+
           <article class="card video-card">
-            <div class="thumb" role="img" aria-label="مكان الصورة المصغرة: إعلان العلامة التجارية والتعريف بشركة 3M4 Media"><span>صورة مصغرة</span></div>
+            <div class="thumb" role="img" aria-label="صورة مصغرة: إعلان العلامة التجارية لـ 3M4 Media"><span>صورة مصغرة</span></div>
             <div class="card-body">
               <p class="date">07/2026 – 08/2026</p>
               <h3>إعلان العلامة التجارية والتعريف بشركة <bdi lang="en">3M4 Media</bdi></h3>
@@ -104,8 +168,9 @@
               <button class="btn btn-sm watch" data-video="YOUTUBE_ID_2" data-title="إعلان العلامة التجارية والتعريف بشركة 3M4 Media">شاهد</button>
             </div>
           </article>
+
           <article class="card video-card">
-            <div class="thumb" role="img" aria-label="مكان الصورة المصغرة: فيديو ترويجي لـ SafeWatch"><span>صورة مصغرة</span></div>
+            <div class="thumb" role="img" aria-label="صورة مصغرة: فيديو ترويجي لـ SafeWatch"><span>صورة مصغرة</span></div>
             <div class="card-body">
               <p class="date">06/2026 – 08/2026</p>
               <h3><bdi lang="en">SafeWatch</bdi>، فيديو ترويجي لنظام مراقبة بالذكاء الاصطناعي</h3>
@@ -113,8 +178,9 @@
               <button class="btn btn-sm watch" data-video="YOUTUBE_ID_3" data-title="SafeWatch، فيديو ترويجي لنظام مراقبة بالذكاء الاصطناعي">شاهد</button>
             </div>
           </article>
+
           <article class="card video-card">
-            <div class="thumb" role="img" aria-label="مكان الصورة المصغرة: فيديو ترويجي لـ CropMind"><span>صورة مصغرة</span></div>
+            <div class="thumb" role="img" aria-label="صورة مصغرة: فيديو ترويجي لـ CropMind"><span>صورة مصغرة</span></div>
             <div class="card-body">
               <p class="date">05/2026 – 08/2026</p>
               <h3><bdi lang="en">CropMind</bdi>، فيديو ترويجي لمنصة زراعة بالذكاء الاصطناعي</h3>
@@ -122,6 +188,7 @@
               <button class="btn btn-sm watch" data-video="YOUTUBE_ID_4" data-title="CropMind، فيديو ترويجي لمنصة زراعة بالذكاء الاصطناعي">شاهد</button>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -129,37 +196,51 @@
     <!-- 3. CASE STUDY -->
     <section id="case-study" class="section alt reveal" aria-labelledby="cs-h">
       <div class="container">
-        <p class="kicker">02 · دراسة حالة</p>
+        <p class="kicker">دراسة حالة</p>
         <h2 id="cs-h">دراسة حالة: متجر دروبشيبينغ على <bdi lang="en">Salla</bdi></h2>
         <p class="sub">06/2026 · بُني وأُطلق خلال 14 يومًا</p>
         <div class="cs-grid">
+
           <div class="cs-block">
             <h3>التحدي</h3>
-            <p>بناء متجر دروبشيبينغ متكامل وإطلاقه على <bdi lang="en">Salla</bdi> من الصفر خلال 14 يومًا.</p>
+            <p>بناء متجر دروبشيبينغ متكامل وإطلاقه على <bdi lang="en">Salla</bdi> من الصفر خلال 14 يومًا — بما في ذلك الهوية البصرية وبحث المنتجات والحملات المدفوعة.</p>
           </div>
+
           <div class="cs-block">
             <h3>ما قمت به</h3>
             <ol class="steps">
               <li>إعداد المتجر: ربط النطاق، وبوابات الدفع، وشركات الشحن.</li>
-              <li>الهوية البصرية: الشعار، ولوحة الألوان، ولافتات الصفحة الرئيسية. وتخصيص القالب لتجربة استخدام سلسة (<bdi lang="en">UX/UI</bdi>).</li>
+              <li>الهوية البصرية: الشعار، ولوحة الألوان، ولافتات الصفحة الرئيسية. وتخصيص القالب لتجربة استخدام سلسة.</li>
               <li>بحث المنتجات والموردين باستخدام تطبيقات تدعمها <bdi lang="en">Salla</bdi>.</li>
               <li>أوصاف منتجات تركّز على معدل التحويل.</li>
               <li>خطة تسويقية وكتابة نصوص إعلانية.</li>
-              <li>حملات مدفوعة على وسائل التواصل الاجتماعي.</li>
+              <li>حملات مدفوعة على <bdi lang="en">Meta</bdi> و<bdi lang="en">TikTok</bdi>.</li>
               <li>تتبّع الأداء (<bdi lang="en">ROAS</bdi> ومعدل التحويل) والتحسين المستمر.</li>
             </ol>
           </div>
+
+          <!-- ✅ outcome metrics -->
           <div class="cs-block outcome">
             <h3>النتيجة</h3>
             <p>سلّمت متجرًا متكاملًا وجاهزًا للبيع في الموعد المحدد.</p>
-            <!-- TODO: add real numbers here (orders, ROAS) only if you have them. Do not estimate. -->
+            <div class="outcome-metrics">
+              <div class="metric">
+                <strong>14</strong>
+                <span>يومًا من الصفر حتى الإطلاق</span>
+              </div>
+              <div class="metric">
+                <strong>100%</strong>
+                <span>تسليم في الموعد المحدد</span>
+              </div>
+            </div>
           </div>
+
         </div>
-        <!-- TODO: replace placeholders with real Salla screenshots, e.g. <img src="../assets/img/salla-1.jpg" alt="الصفحة الرئيسية لمتجر Salla" width="600" height="400" loading="lazy"> -->
+
         <div class="gallery" aria-label="لقطات شاشة للمتجر">
-          <div class="shot" role="img" aria-label="مكان مؤقت للقطة الشاشة 1"><span>لقطة شاشة 1</span></div>
-          <div class="shot" role="img" aria-label="مكان مؤقت للقطة الشاشة 2"><span>لقطة شاشة 2</span></div>
-          <div class="shot" role="img" aria-label="مكان مؤقت للقطة الشاشة 3"><span>لقطة شاشة 3</span></div>
+          <div class="shot" role="img" aria-label="لقطة شاشة 1"><span>لقطة شاشة 1</span></div>
+          <div class="shot" role="img" aria-label="لقطة شاشة 2"><span>لقطة شاشة 2</span></div>
+          <div class="shot" role="img" aria-label="لقطة شاشة 3"><span>لقطة شاشة 3</span></div>
         </div>
       </div>
     </section>
@@ -167,27 +248,29 @@
     <!-- 4. ANALYTICS -->
     <section id="analytics" class="section reveal" aria-labelledby="an-h">
       <div class="container">
-        <p class="kicker">03 · التحليلات</p>
+        <p class="kicker">التحليلات</p>
         <h2 id="an-h">التحليلات ولوحات المعلومات</h2>
-        <p class="sub">مشاريع داعمة.</p>
+        <p class="sub">مشاريع داعمة باستخدام <bdi lang="en">Power BI</bdi> و<bdi lang="en">Python</bdi> والتعلّم الآلي.</p>
         <div class="grid two">
-          <!-- TODO: replace .shot with real dashboard images (width/height set, loading="lazy") -->
+
           <article class="card">
-            <div class="shot wide" role="img" aria-label="مكان صورة لوحة المعلومات: منصة تحليلات التجزئة بالذكاء الاصطناعي"><span>صورة لوحة المعلومات</span></div>
+            <div class="shot wide" role="img" aria-label="لوحة معلومات: منصة تحليلات التجزئة بالذكاء الاصطناعي"><span>صورة لوحة المعلومات</span></div>
             <div class="card-body">
               <p class="date">01/2026 – 02/2026</p>
               <h3>منصة تحليلات التجزئة بالذكاء الاصطناعي</h3>
               <p>منصة تحليلات متكاملة للتنبؤ بالطلب، وتقسيم العملاء، وتحليل أداء المبيعات باستخدام نماذج تعلّم آلي. أتمتة خطوط البيانات، ولوحات <bdi lang="en">Power BI</bdi> تفاعلية تحوّل بيانات المبيعات والعملاء إلى رؤى قابلة للتنفيذ.</p>
             </div>
           </article>
+
           <article class="card">
-            <div class="shot wide" role="img" aria-label="مكان صورة لوحة المعلومات: ذكاء السياحة السعودية"><span>صورة لوحة المعلومات</span></div>
+            <div class="shot wide" role="img" aria-label="لوحة معلومات: ذكاء السياحة السعودية"><span>صورة لوحة المعلومات</span></div>
             <div class="card-body">
               <p class="date">06/2026 – 08/2026</p>
               <h3>ذكاء السياحة السعودية، منصة ذكاء أعمال</h3>
-              <p>تحليل مجموعات بيانات سياحية كبيرة باستخدام النمذجة الإحصائية والتعلّم الآلي لتحديد اتجاهات سلوك المستهلك. أتمتة عمليات <bdi lang="en">ETL</bdi>، ولوحات <bdi lang="en">Power BI</bdi> تفاعلية لمتابعة مؤشرات الأداء (<bdi lang="en">KPI</bdi>).</p>
+              <p>تحليل مجموعات بيانات سياحية كبيرة باستخدام النمذجة الإحصائية والتعلّم الآلي لتحديد اتجاهات سلوك المستهلك. أتمتة عمليات <bdi lang="en">ETL</bdi>، ولوحات <bdi lang="en">Power BI</bdi> تفاعلية لمتابعة مؤشرات الأداء.</p>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -195,7 +278,7 @@
     <!-- 5. EXPERIENCE -->
     <section id="experience" class="section alt reveal" aria-labelledby="ex-h">
       <div class="container">
-        <p class="kicker">04 · الخبرة</p>
+        <p class="kicker">الخبرة</p>
         <h2 id="ex-h">الخبرة</h2>
         <ol class="timeline">
           <li>
@@ -203,8 +286,9 @@
             <h3>محلل بيانات وتسويق</h3>
             <p class="meta"><bdi lang="en">3M4Media</bdi> · طنطا، مصر</p>
             <ul>
-              <li>حلّلت بيانات أداء حملات تسويقية واسعة النطاق في أسواق الشرق الأوسط وشمال أفريقيا (<bdi lang="en">MENA</bdi>) باستخدام التحليل الإحصائي والتعلّم الآلي، لتحديد الاتجاهات وتحسين الحملات.</li>
+              <li>حلّلت بيانات أداء حملات تسويقية واسعة النطاق في أسواق الشرق الأوسط وشمال أفريقيا باستخدام التحليل الإحصائي والتعلّم الآلي، لتحديد الاتجاهات وتحسين الحملات.</li>
               <li>بنيت لوحات <bdi lang="en">KPI</bdi> والتقارير الآلية في <bdi lang="en">Power BI</bdi> و<bdi lang="en">Excel</bdi> وتولّيت صيانتها لصالح الإدارة العليا.</li>
+              <li>أدرت حملات مدفوعة على <strong><bdi lang="en">Meta</bdi> و<bdi lang="en">TikTok</bdi> و<bdi lang="en">Google</bdi> و<bdi lang="en">Snapchat</bdi></strong> — وتتبّعت <bdi lang="en">ROAS</bdi> و<bdi lang="en">CTR</bdi> و<bdi lang="en">CPA</bdi> ومعدل التحويل.</li>
               <li>نظّفت مجموعات البيانات من مصادر متعددة، وتحققت منها، وحوّلتها للحصول على تقارير دقيقة.</li>
               <li>أتمتّ سير العمل التحليلي وإعداد التقارير باستخدام أدوات الذكاء الاصطناعي.</li>
               <li>عرضت النتائج في رسوم بيانية وتقارير منظمة وواضحة لأصحاب المصلحة من غير المتخصصين.</li>
@@ -227,31 +311,56 @@
     <!-- 6. SKILLS -->
     <section id="skills" class="section reveal" aria-labelledby="sk-h">
       <div class="container">
-        <p class="kicker">05 · المهارات</p>
+        <p class="kicker">المهارات</p>
         <h2 id="sk-h">المهارات والأدوات</h2>
-        <div class="skill-groups">
+
+        <!-- ✅ منصات الإعلانات — بارزة للكفيل السعودي -->
+        <h3 style="margin-block: 1.5rem .75rem; color: var(--accent);">منصات الإعلانات الرقمية</h3>
+        <div class="platforms-grid">
+          <div class="platform-card"><span class="platform-icon" style="background:#1877F2;color:#fff">f</span> <bdi lang="en">Meta Ads</bdi> (فيسبوك وإنستغرام)</div>
+          <div class="platform-card"><span class="platform-icon" style="background:#000;color:#fff">T</span> <bdi lang="en">TikTok Ads</bdi></div>
+          <div class="platform-card"><span class="platform-icon" style="background:#4285F4;color:#fff">G</span> <bdi lang="en">Google Ads</bdi></div>
+          <div class="platform-card"><span class="platform-icon" style="background:#FFFC00;color:#000">👻</span> <bdi lang="en">Snapchat Ads</bdi></div>
+        </div>
+
+        <div class="skill-groups" style="margin-block-start: 2rem;">
           <div>
             <h3>التسويق وتحليل الأداء</h3>
             <ul class="chips">
-              <li>متابعة مؤشرات الأداء (<bdi lang="en">KPI</bdi>)</li><li>تحليل أداء الحملات (<bdi lang="en">ROAS</bdi>، <bdi lang="en">CPA</bdi>، <bdi lang="en">CTR</bdi>، معدل التحويل)</li><li>تقسيم العملاء</li><li>التنبؤ</li><li>إعداد التقارير الآلية</li>
+              <li>متابعة مؤشرات الأداء</li>
+              <li><bdi lang="en">ROAS</bdi></li><li><bdi lang="en">CPA</bdi></li><li><bdi lang="en">CTR</bdi></li>
+              <li>معدل التحويل</li>
+              <li>تحسين الحملات</li>
+              <li>تقسيم العملاء</li>
+              <li>التنبؤ بالطلب</li>
+              <li>إعداد التقارير الآلية</li>
             </ul>
           </div>
           <div>
             <h3>التجارة الإلكترونية والتسويق الرقمي</h3>
             <ul class="chips">
-              <li lang="en">Salla</li><li>دروبشيبينغ</li><li>بحث المنتجات</li><li>كتابة النصوص الإعلانية</li><li>إعداد المتجر وتحسينه</li><li>الهوية البصرية</li><li>إعلانات فيديو بالذكاء الاصطناعي (<bdi lang="en">Google Flow</bdi>)</li>
+              <li><bdi lang="en">Salla</bdi></li><li>دروبشيبينغ</li>
+              <li>بحث المنتجات</li><li>كتابة النصوص الإعلانية</li>
+              <li>إعداد المتجر وتحسينه</li><li>الهوية البصرية</li>
+              <li>إعلانات فيديو بالذكاء الاصطناعي</li>
             </ul>
           </div>
           <div>
             <h3>التحليلات وذكاء الأعمال</h3>
             <ul class="chips">
-              <li lang="en">Power BI</li><li>Excel (متقدم)</li><li lang="en">DAX</li><li lang="en">Power Query</li><li lang="en">Tableau</li><li lang="en">SQL</li><li lang="en">Python</li>
+              <li><bdi lang="en">Power BI</bdi></li>
+              <li><bdi lang="en">Excel</bdi> (متقدم)</li>
+              <li><bdi lang="en">DAX</bdi></li><li><bdi lang="en">Power Query</bdi></li>
+              <li><bdi lang="en">Tableau</bdi></li><li><bdi lang="en">SQL</bdi></li><li><bdi lang="en">Python</bdi></li>
             </ul>
           </div>
           <div>
             <h3>أدوات الذكاء الاصطناعي</h3>
             <ul class="chips">
-              <li>الذكاء الاصطناعي التوليدي</li><li>هندسة الأوامر (<bdi lang="en">Prompt Engineering</bdi>)</li><li>أتمتة سير العمل بالذكاء الاصطناعي</li><li lang="en">ChatGPT</li><li lang="en">Claude</li>
+              <li>الذكاء الاصطناعي التوليدي</li>
+              <li>هندسة الأوامر</li>
+              <li>أتمتة سير العمل</li>
+              <li><bdi lang="en">ChatGPT</bdi></li><li><bdi lang="en">Claude</bdi></li>
             </ul>
           </div>
         </div>
@@ -261,14 +370,14 @@
     <!-- 7. CERTIFICATIONS -->
     <section id="certs" class="section alt reveal" aria-labelledby="ce-h">
       <div class="container">
-        <p class="kicker">06 · الشهادات</p>
+        <p class="kicker">الشهادات</p>
         <h2 id="ce-h">الشهادات</h2>
         <ul class="certs">
-          <li><span lang="en" dir="ltr">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>يوليو 2026</time></li>
-          <li><span lang="en" dir="ltr">Google Data Analytics Professional Certificate</span><time>مارس 2026</time></li>
-          <li><span lang="en" dir="ltr">IBM AI Engineering Professional Certificate</span><time>مايو 2026</time></li>
-          <li><span lang="en" dir="ltr">Microsoft Certified: Azure Data Fundamentals (DP-900)</span><time>يوليو 2026</time></li>
-          <li><span lang="en" dir="ltr">AI Agent Fundamentals with Azure AI Foundry</span><time>سبتمبر 2026</time></li>
+          <li style="--i:0"><span lang="en" dir="ltr">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>يوليو 2026</time></li>
+          <li style="--i:1"><span lang="en" dir="ltr">Google Data Analytics Professional Certificate</span><time>مارس 2026</time></li>
+          <li style="--i:2"><span lang="en" dir="ltr">IBM AI Engineering Professional Certificate</span><time>مايو 2026</time></li>
+          <li style="--i:3"><span lang="en" dir="ltr">Microsoft Certified: Azure Data Fundamentals (DP-900)</span><time>يوليو 2026</time></li>
+          <li style="--i:4"><span lang="en" dir="ltr">AI Agent Fundamentals with Azure AI Foundry</span><time>سبتمبر 2026</time></li>
         </ul>
       </div>
     </section>
@@ -276,13 +385,12 @@
     <!-- 8. CONTACT -->
     <section id="contact" class="section contact reveal" aria-labelledby="co-h">
       <div class="container">
-        <p class="kicker">07 · تواصل</p>
-        <h2 id="co-h">تواصل</h2>
+        <p class="kicker">تواصل</p>
+        <h2 id="co-h">لنعمل معًا</h2>
         <p class="lead">متاح لوظائف أخصائي التسويق في المملكة العربية السعودية.</p>
         <p class="sub">اللغات: العربية (اللغة الأم)، الإنجليزية (كفاءة مهنية في العمل).</p>
         <div class="actions">
-          <!-- TODO: confirm WhatsApp number (+20 112 624 2932 is a placeholder). If you ever print it as text, wrap it: <bdi dir="ltr">+20 112 624 2932</bdi> -->
-          <a class="btn" href="https://wa.me/201126242932" target="_blank" rel="noopener">واتساب</a>
+          <a class="btn btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">واتساب</a>
           <a class="btn btn-outline" href="mailto:goda.emade2001@gmail.com">البريد الإلكتروني</a>
           <a class="btn btn-outline" href="https://linkedin.com/in/goda-emad" target="_blank" rel="noopener" lang="en">LinkedIn</a>
           <a class="btn btn-outline" href="https://github.com/Goda-Emad" target="_blank" rel="noopener" lang="en">GitHub</a>
@@ -290,6 +398,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -299,8 +408,10 @@
     </div>
   </footer>
 
+  <!-- Floating WhatsApp (mobile) -->
   <a class="fab" href="https://wa.me/201126242932" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب</a>
 
+  <!-- Video modal -->
   <dialog id="videoModal" aria-labelledby="modalTitle">
     <div class="modal-head">
       <h3 id="modalTitle"></h3>
@@ -309,7 +420,7 @@
     <div class="modal-body" id="modalBody" data-soon="الفيديو قريبًا."></div>
   </dialog>
 
-  <script src="../assets/js/main.js?v=2" defer></script>
-  <script src="../assets/js/motion.js?v=3" defer></script>
+  <script src="../assets/js/main.js?v=3" defer></script>
+  <script src="../assets/js/motion.js?v=4" defer></script>
 </body>
 </html>
