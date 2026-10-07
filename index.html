@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1f33">
-  <title>Goda Emad | Digital Marketing &amp; Data Analyst</title>
-  <meta name="description" content="Portfolio of Goda Emad: data-driven digital marketing specialist. KPI analytics, AI-generated video ads, and e-commerce campaigns.">
-  <link rel="canonical" href="https://goda-emad.github.io/marketing-portfolio/">
-  <link rel="alternate" hreflang="en"        href="https://goda-emad.github.io/marketing-portfolio/">
-  <link rel="alternate" hreflang="ar"        href="https://goda-emad.github.io/marketing-portfolio/ar/">
-  <link rel="alternate" hreflang="x-default" href="https://goda-emad.github.io/marketing-portfolio/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1628">
+  <title>جودة عماد | تسويق رقمي وتحليل بيانات</title>
+  <meta name="description" content="ملف أعمال جودة عماد: متخصصة في التسويق الرقمي المبني على البيانات. تحليل KPI، إعلانات فيديو بالذكاء الاصطناعي، وحملات تجارة إلكترونية.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:title" content="جودة عماد | تسويق رقمي وتحليل بيانات">
+  <meta property="og:description" content="أحوّل بيانات الحملات إلى قرارات تسويقية. تحليل KPI، إعلانات فيديو بالذكاء الاصطناعي، تجارة إلكترونية.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Open Graph -->
-  <meta property="og:type"              content="website">
-  <meta property="og:locale"            content="en_US">
-  <meta property="og:locale:alternate"  content="ar_AR">
-  <meta property="og:title"             content="Goda Emad | Digital Marketing &amp; Data Analyst">
-  <meta property="og:description"       content="I turn campaign data into marketing decisions. KPI analytics, AI video ads, e-commerce.">
-  <meta property="og:image"             content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
-  <meta property="og:url"               content="https://goda-emad.github.io/marketing-portfolio/">
-  <meta name="twitter:card"             content="summary_large_image">
-  <meta name="twitter:title"            content="Goda Emad | Digital Marketing &amp; Data Analyst">
-  <meta name="twitter:description"      content="I turn campaign data into marketing decisions.">
-  <meta name="twitter:image"            content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
-
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Goda Emad",
-    "jobTitle": "Digital Marketing & Data Analyst",
+    "name": "جودة عماد",
+    "jobTitle": "متخصصة تسويق رقمي وتحليل بيانات",
     "url": "https://goda-emad.github.io/marketing-portfolio/",
     "sameAs": [
       "https://linkedin.com/in/goda-emad",
@@ -44,9 +32,8 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Apply theme before paint to prevent flash -->
   <script>
     (function(){
       var t = localStorage.getItem('goda-theme');
@@ -55,367 +42,783 @@
     })();
   </script>
 
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+<style>
+/* ── TOKENS ── */
+:root {
+  --bg:        #f7f5f0;
+  --bg2:       #edeae3;
+  --surface:   #ffffff;
+  --border:    rgba(15,30,60,.10);
+  --text:      #0f1e3c;
+  --text2:     #4a5568;
+  --accent:    #0055b3;
+  --accent2:   #003d82;
+  --gold:      #c8972a;
+  --gold2:     #a07820;
+  --radius:    14px;
+  --radius-sm: 8px;
+  --shadow:    0 2px 20px rgba(0,60,180,.08);
+  --shadow-lg: 0 8px 40px rgba(0,60,180,.14);
+  --font:      'Tajawal', sans-serif;
+  --header-h:  68px;
+  --trans:     .22s ease;
+}
+[data-theme="dark"] {
+  --bg:      #080f1e;
+  --bg2:     #0d1729;
+  --surface: #111d35;
+  --border:  rgba(255,255,255,.08);
+  --text:    #eaf0ff;
+  --text2:   #8fa3c8;
+  --shadow:  0 2px 20px rgba(0,0,0,.4);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,.5);
+}
+
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--header-h) + 1rem)}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;font-size:1rem;transition:background var(--trans),color var(--trans)}
+img{max-width:100%;display:block;border-radius:var(--radius)}
+a{color:var(--accent);text-decoration:none}
+ul,ol{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:var(--font)}
+
+/* ── SKIP ── */
+.skip{position:absolute;top:-999px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.5rem 1rem;border-radius:0 0 8px 8px;z-index:9999;transition:top .2s}
+.skip:focus{top:0}
+
+/* ── PROGRESS ── */
+.progress{position:fixed;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--accent));transform:scaleX(0);transform-origin:right;z-index:1000;border-radius:0 2px 2px 0}
+
+/* ── CONTAINER ── */
+.container{max-width:1120px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,2.5rem)}
+
+/* ── HEADER ── */
+.site-header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);transition:background var(--trans),box-shadow var(--trans);height:var(--header-h);display:flex;align-items:center}
+.site-header.scrolled{box-shadow:0 2px 24px rgba(0,60,180,.12);background:var(--bg)}
+.bar{display:flex;align-items:center;justify-content:space-between;width:100%}
+.brand{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.15rem;color:var(--text);letter-spacing:-.01em}
+.logo{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--gold));color:#fff;font-weight:900;font-size:1rem;display:grid;place-items:center;flex-shrink:0}
+.nav{display:flex;align-items:center;gap:1.5rem}
+.nav a{color:var(--text2);font-size:.93rem;font-weight:500;transition:color var(--trans);position:relative}
+.nav a::after{content:'';position:absolute;bottom:-3px;right:0;left:0;height:2px;background:var(--gold);border-radius:2px;transform:scaleX(0);transform-origin:right;transition:transform var(--trans)}
+.nav a:hover,.nav a.active{color:var(--accent)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
+.nav a[aria-current="true"]{color:var(--accent)}
+
+/* THEME TOGGLE */
+.theme-toggle{width:42px;height:24px;border-radius:12px;background:var(--border);border:1px solid var(--border);position:relative;transition:background var(--trans);flex-shrink:0}
+.theme-toggle::before{content:'';position:absolute;top:3px;right:3px;width:16px;height:16px;border-radius:50%;background:var(--accent);transition:transform var(--trans)}
+[data-theme="dark"] .theme-toggle::before{transform:translateX(-18px)}
+
+/* MENU BTN */
+.menu-btn{display:none;flex-direction:column;gap:5px;padding:6px;border-radius:var(--radius-sm)}
+.menu-btn span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .22s,opacity .22s}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* BTN */
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.65rem 1.4rem;border-radius:50px;font-weight:700;font-size:.93rem;transition:all var(--trans);cursor:pointer;border:2px solid transparent;font-family:var(--font)}
+.btn:not(.btn-outline):not(.btn-wa):not(.btn-sm){background:var(--accent);color:#fff}
+.btn:not(.btn-outline):not(.btn-wa):not(.btn-sm):hover{background:var(--accent2);transform:translateY(-1px);box-shadow:0 4px 18px rgba(0,85,179,.35)}
+.btn-outline{border-color:var(--border);color:var(--text);background:transparent}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1da851;transform:translateY(-1px);box-shadow:0 4px 18px rgba(37,211,102,.35)}
+.btn-sm{padding:.42rem .9rem;font-size:.85rem}
+.btn-sm:not(.btn-outline):not(.btn-wa){background:var(--accent);color:#fff}
+.btn-sm:not(.btn-outline):not(.btn-wa):hover{background:var(--accent2)}
+
+/* ── HERO ── */
+.hero{padding-block:clamp(4rem,10vw,7rem) clamp(3rem,8vw,5.5rem);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40%;left:-20%;width:70%;height:160%;background:radial-gradient(ellipse,rgba(0,85,179,.07) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;top:20%;right:-10%;width:45%;height:100%;background:radial-gradient(ellipse,rgba(200,151,42,.06) 0%,transparent 65%);pointer-events:none}
+.eyebrow{font-size:.9rem;font-weight:600;color:var(--gold);letter-spacing:.04em;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:900;line-height:1.18;color:var(--text);max-width:16ch;margin-bottom:1.25rem}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:1.15rem;color:var(--text2);max-width:52ch;margin-bottom:2rem;line-height:1.75}
+
+/* KPI pills */
+.kpi-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem}
+.kpi-pill{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .85rem;border-radius:50px;font-size:.85rem;font-weight:600;background:var(--surface);border:1px solid var(--border);color:var(--text);box-shadow:var(--shadow)}
+.kpi-pill span{color:var(--text2);font-weight:400}
+
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.tags li{padding:.3rem .75rem;border-radius:50px;font-size:.82rem;font-weight:600;background:color-mix(in srgb,var(--accent) 10%,transparent);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 20%,transparent)}
+
+/* actions */
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2.5rem}
+
+/* stats */
+.stats{display:flex;flex-wrap:wrap;gap:1.5rem;padding-top:2rem;border-top:1px solid var(--border)}
+.stats li{display:flex;flex-direction:column;gap:.2rem}
+.stats strong{font-size:2rem;font-weight:900;color:var(--accent);line-height:1}
+.stats span{font-size:.82rem;color:var(--text2);max-width:20ch}
+
+/* ── SECTION ── */
+.section{padding-block:clamp(3.5rem,8vw,6rem)}
+.section.alt{background:var(--bg2)}
+.kicker{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem}
+.section h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:900;margin-bottom:.6rem;line-height:1.2}
+.sub{color:var(--text2);margin-bottom:2.5rem;font-size:.97rem}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .55s,transform .55s}
+.reveal.visible{opacity:1;transform:none}
+
+/* ── GRID ── */
+.grid{display:grid;gap:1.5rem}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.video-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
+/* ── CARD ── */
+.card{background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:box-shadow var(--trans),transform var(--trans)}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.card-body{padding:1.25rem 1.4rem}
+.card .date{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:.35rem}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;line-height:1.35}
+.card p{font-size:.9rem;color:var(--text2);line-height:1.65;margin-bottom:1rem}
+
+/* THUMB — video cards */
+.thumb{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;background:var(--bg2)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .thumb img{transform:scale(1.04)}
+.play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);opacity:0;transition:opacity var(--trans)}
+.card:hover .play-overlay{opacity:1}
+.play-icon{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center}
+.play-icon::after{content:'';border-style:solid;border-width:10px 0 10px 18px;border-color:transparent transparent transparent var(--accent);margin-right:-3px}
+
+/* SHOT — static images */
+.shot{border-radius:var(--radius);overflow:hidden;background:var(--bg2);position:relative}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot.wide{aspect-ratio:16/9}
+
+/* ── CASE STUDY ── */
+.cs-grid{display:grid;gap:1.5rem;grid-template-columns:1fr 1fr;margin-bottom:2rem}
+@media(max-width:700px){.cs-grid{grid-template-columns:1fr}}
+.cs-block{background:var(--surface);border-radius:var(--radius);padding:1.75rem;border:1px solid var(--border)}
+.cs-block h3{font-size:1rem;font-weight:700;color:var(--accent);margin-bottom:.85rem}
+.steps{padding-right:1.2rem;list-style:decimal;display:flex;flex-direction:column;gap:.5rem}
+.steps li{font-size:.9rem;color:var(--text2);padding-right:.3rem}
+.outcome{grid-column:1/-1}
+.outcome-metrics{display:flex;gap:2rem;margin-top:1.25rem;flex-wrap:wrap}
+.metric{display:flex;flex-direction:column}
+.metric strong{font-size:2.4rem;font-weight:900;color:var(--gold);line-height:1}
+.metric span{font-size:.82rem;color:var(--text2)}
+
+/* GALLERY */
+.gallery{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}}
+.gallery .shot{aspect-ratio:2/3}
+
+/* ── ANALYTICS CARDS ── */
+#analytics .shot.wide{margin-bottom:0;aspect-ratio:16/9}
+
+/* ── PLATFORMS ── */
+.platforms-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:2rem}
+.platform-card{background:var(--surface);border-radius:var(--radius-sm);border:1px solid var(--border);padding:1rem 1.2rem;display:flex;align-items:center;gap:.85rem;font-size:.92rem;font-weight:600;box-shadow:var(--shadow)}
+.platform-icon{width:36px;height:36px;border-radius:8px;display:grid;place-items:center;font-size:1rem;font-weight:900;flex-shrink:0}
+
+/* ── SKILL GROUPS ── */
+.skill-groups{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.skill-groups h3{font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:.75rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips li{padding:.3rem .7rem;background:var(--bg2);border-radius:50px;font-size:.82rem;color:var(--text2);border:1px solid var(--border)}
+
+/* ── TIMELINE ── */
+.timeline{display:flex;flex-direction:column;gap:0}
+.timeline li{padding-block:2rem;border-right:2px solid var(--border);padding-right:2rem;position:relative}
+.timeline li::before{content:'';position:absolute;top:2.35rem;right:-7px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+.timeline li .date{font-size:.8rem;color:var(--gold);font-weight:600;margin-bottom:.35rem}
+.timeline li h3{font-size:1.1rem;font-weight:700;margin-bottom:.25rem}
+.timeline li .meta{font-size:.88rem;color:var(--text2);margin-bottom:.75rem}
+.timeline li ul{padding-right:1.2rem;list-style:disc;display:flex;flex-direction:column;gap:.4rem}
+.timeline li ul li{font-size:.9rem;color:var(--text2)}
+
+/* ── CERTS ── */
+.certs{display:flex;flex-direction:column;gap:.75rem}
+.certs li{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--surface);border-radius:var(--radius-sm);padding:1rem 1.25rem;border:1px solid var(--border);box-shadow:var(--shadow)}
+.certs li span{font-weight:600;font-size:.92rem}
+.certs time{font-size:.8rem;color:var(--gold);font-weight:600;white-space:nowrap}
+
+/* ── CONTACT ── */
+.contact{text-align:center}
+.contact .lead{max-width:none}
+
+/* ── FOOTER ── */
+.site-footer{border-top:1px solid var(--border);padding-block:1.5rem;margin-top:0}
+.foot{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--text2);gap:1rem;flex-wrap:wrap}
+.foot a{color:var(--text2);transition:color var(--trans)}
+.foot a:hover{color:var(--accent)}
+
+/* ── FAB ── */
+.fab{position:fixed;bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));left:1.5rem;background:#25d366;color:#fff;font-size:.82rem;font-weight:700;padding:.7rem 1.2rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:90;transition:transform var(--trans),box-shadow var(--trans);display:flex;align-items:center;gap:.5rem}
+.fab::before{content:'💬'}
+.fab:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(37,211,102,.5);color:#fff}
+
+/* ── MODAL ── */
+dialog{border:none;border-radius:var(--radius);padding:0;background:var(--surface);max-width:min(90vw,820px);width:100%;box-shadow:0 24px 80px rgba(0,0,0,.45);position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);margin:0}
+dialog::backdrop{background:rgba(0,0,0,.75);backdrop-filter:blur(4px)}
+.modal-head{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border-bottom:1px solid var(--border);gap:1rem}
+.modal-head h3{font-size:1rem;font-weight:700;color:var(--text);flex:1}
+.close{width:32px;height:32px;border-radius:50%;background:var(--bg2);color:var(--text);font-size:1.2rem;display:grid;place-items:center;transition:background var(--trans);flex-shrink:0}
+.close:hover{background:var(--accent);color:#fff}
+.modal-body{padding:1rem}
+.modal-body iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:var(--radius-sm);display:block}
+.modal-body p{text-align:center;color:var(--text2);padding:2rem 0}
+.drive-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;padding:.7rem 1.5rem;border-radius:50px;font-weight:700;font-size:.9rem;margin-top:1rem;transition:background var(--trans)}
+.drive-btn:hover{background:var(--accent2);color:#fff}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .menu-btn{display:flex}
+  .nav{
+    position:fixed;inset:var(--header-h) 0 0 0;
+    background:var(--bg);flex-direction:column;
+    justify-content:center;align-items:center;gap:1.75rem;
+    opacity:0;pointer-events:none;transition:opacity .25s;
+  }
+  .nav.open{opacity:1;pointer-events:all}
+  .nav a{font-size:1.15rem}
+}
+@media(max-width:500px){
+  .hero h1{font-size:2rem}
+  .stats{gap:1.25rem}
+  .stats strong{font-size:1.6rem}
+  .cs-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .platforms-grid{grid-template-columns:1fr 1fr}
+  .certs li{flex-direction:column;align-items:flex-start}
+}
+
+/* ── SECTION ACCENT H3 ── */
+.accent-h3{margin-block:1.75rem .85rem;color:var(--accent);font-size:1.05rem;font-weight:700}
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container bar">
-      <a class="brand" href="#top" aria-label="Goda Emad, home">
-        <span class="logo" aria-hidden="true">G</span>Goda Emad
-      </a>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="#top" aria-label="جودة عماد - الرئيسية">
+      <span class="logo" aria-hidden="true">ج</span>جودة عماد
+    </a>
 
-      <button class="menu-btn" id="menuBtn"
-        aria-expanded="false" aria-controls="nav"
-        aria-label="Open menu"
-        data-label-open="Open menu" data-label-close="Close menu">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="menu-btn" id="menuBtn"
+      aria-expanded="false" aria-controls="nav"
+      aria-label="فتح القائمة"
+      data-label-open="فتح القائمة" data-label-close="إغلاق القائمة">
+      <span></span><span></span><span></span>
+    </button>
 
-      <nav id="nav" class="nav" aria-label="Main">
-        <a href="#work">Work</a>
-        <a href="#case-study">Case study</a>
-        <a href="#analytics">Analytics</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a href="ar/index.html" lang="ar" hreflang="ar" aria-label="Arabic version">AR</a>
+    <nav id="nav" class="nav" aria-label="رئيسية">
+      <a href="#work">الأعمال</a>
+      <a href="#case-study">دراسة حالة</a>
+      <a href="#analytics">التحليلات</a>
+      <a href="#experience">الخبرة</a>
+      <a href="#contact">تواصل</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي" aria-pressed="false" title="تبديل الوضع الليلي/النهاري"></button>
+      <a class="btn btn-sm btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">واتساب</a>
+    </nav>
+  </div>
+</header>
 
-        <!-- Dark / Light toggle -->
-        <button
-          class="theme-toggle"
-          id="themeToggle"
-          aria-label="Switch to dark mode"
-          aria-pressed="false"
-          title="Toggle dark / light mode">
-        </button>
+<main id="main">
 
-        <a class="btn btn-sm" href="https://wa.me/201126242932" target="_blank" rel="noopener">WhatsApp</a>
-      </nav>
+<!-- 1. HERO -->
+<section class="hero" id="top">
+  <div class="container">
+    <p class="eyebrow">تسويق رقمي وتحليل بيانات · القاهرة الجديدة، مصر</p>
+    <h1>أُحوِّل بيانات الحملات إلى <em>قرارات تسويقية</em></h1>
+    <p class="lead">متخصصة في التسويق الرقمي المبني على البيانات: تحليل KPI، إعلانات فيديو بالذكاء الاصطناعي، وحملات التجارة الإلكترونية.</p>
+
+    <div class="kpi-row">
+      <span class="kpi-pill">Meta Ads <span>· فيسبوك وإنستغرام</span></span>
+      <span class="kpi-pill">TikTok Ads</span>
+      <span class="kpi-pill">Google Ads</span>
+      <span class="kpi-pill">Snapchat Ads</span>
     </div>
-  </header>
 
-  <main id="main">
+    <ul class="tags" aria-label="الأدوات الأساسية">
+      <li>Power BI</li><li>Excel</li><li>Google Flow</li><li>Salla</li><li>SQL</li><li>Python</li>
+    </ul>
 
-    <!-- 1. HERO -->
-    <section class="hero" id="top">
-      <div class="container">
-        <p class="eyebrow">Digital Marketing &amp; Data Analyst · New Cairo, Egypt</p>
-        <h1>I turn campaign data into marketing decisions.</h1>
-        <p class="lead">Data-driven digital marketing specialist: KPI analytics, AI-generated video ads, and e-commerce campaigns.</p>
+    <div class="actions">
+      <a class="btn" href="#work">عرض أعمالي</a>
+      <a class="btn btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+      <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>تحميل السيرة الذاتية</a>
+    </div>
 
-        <!-- Ad platforms highlight -->
-        <div class="kpi-row">
-          <span class="kpi-pill">Meta Ads <span>· Facebook &amp; Instagram</span></span>
-          <span class="kpi-pill">TikTok Ads</span>
-          <span class="kpi-pill">Google Ads</span>
-          <span class="kpi-pill">Snapchat Ads</span>
+    <ul class="stats" aria-label="أبرز الأرقام">
+      <li>
+        <strong>+3</strong>
+        <span>سنوات خبرة في تحليل التسويق في 3M4 Media</span>
+      </li>
+      <li>
+        <strong>4</strong>
+        <span>إعلانات فيديو بالذكاء الاصطناعي عبر Google Flow</span>
+      </li>
+      <li>
+        <strong>5</strong>
+        <span>شهادات احترافية: PL-300، Google DA، IBM AI، Azure DP-900</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 2. FEATURED WORK -->
+<section id="work" class="section alt reveal" aria-labelledby="work-h">
+  <div class="container">
+    <p class="kicker">الأعمال</p>
+    <h2 id="work-h">إعلانات فيديو بالذكاء الاصطناعي</h2>
+    <p class="sub">مُنتجة بواسطة Google Flow · مشاريع شخصية واحترافية</p>
+    <div class="grid video-grid">
+
+      <article class="card video-card">
+        <div class="thumb">
+          <img src="assets/img/thumb-1.jpg" alt="مشروع TikTok Product Ads" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)';this.style.display='none'">
+          <div class="play-overlay"><div class="play-icon"></div></div>
         </div>
-
-        <ul class="tags" aria-label="Core tools">
-          <li>Power BI</li><li>Excel</li><li>Google Flow</li><li>Salla</li><li>SQL</li><li>Python</li>
-        </ul>
-
-        <div class="actions">
-          <a class="btn" href="#work">View my work</a>
-          <a class="btn btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">WhatsApp me</a>
-          <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>Download CV</a>
+        <div class="card-body">
+          <p class="date">09/2026 – 10/2026</p>
+          <h3>إعلانات منتجات TikTok</h3>
+          <p>إعلانات فيديو قصيرة لـ TikTok، مصممة بمحتوى وسيناريوهات تجذب الانتباه في الثواني الأولى.</p>
+          <button class="btn btn-sm watch"
+            data-video="https://drive.google.com/file/d/1K8_WaWFbdXgWoDGBdogpFlun-Rnbmvqk/view?usp=sharing"
+            data-title="إعلانات منتجات TikTok">مشاهدة</button>
         </div>
+      </article>
 
-        <ul class="stats" aria-label="Key facts">
-          <li>
-            <strong>3+</strong>
-            <span>Years of experience in marketing analytics at 3M4Media</span>
-          </li>
-          <li>
-            <strong>4</strong>
-            <span>AI video ads produced with Google Flow</span>
-          </li>
-          <li>
-            <strong>5</strong>
-            <span>Professional certifications — PL-300, Google DA, IBM AI, Azure DP-900</span>
-          </li>
-        </ul>
+      <article class="card video-card">
+        <div class="thumb">
+          <img src="assets/img/thumb-2.jpg" alt="مشروع 3M4 Media" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)';this.style.display='none'">
+          <div class="play-overlay"><div class="play-icon"></div></div>
+        </div>
+        <div class="card-body">
+          <p class="date">07/2026 – 08/2026</p>
+          <h3>إعلان علامة تجارية، 3M4 Media</h3>
+          <p>فيديو تسويقي من مبادرتي الشخصية لتعريف 3M4 Media وخدماتها، أُهديته لأصحاب الشركة لاستخدامه في وسائل التواصل الاجتماعي.</p>
+          <button class="btn btn-sm watch"
+            data-video="https://drive.google.com/file/d/1_Y0atCW_JyEA3PtdOH7CNJlxHeoXGX5q/view?usp=sharing"
+            data-title="إعلان علامة تجارية، 3M4 Media">مشاهدة</button>
+        </div>
+      </article>
+
+      <article class="card video-card">
+        <div class="thumb">
+          <img src="assets/img/thumb-3.jpg" alt="مشروع SafeWatch" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)';this.style.display='none'">
+          <div class="play-overlay"><div class="play-icon"></div></div>
+        </div>
+        <div class="card-body">
+          <p class="date">06/2026 – 08/2026</p>
+          <h3>SafeWatch، ترويج نظام مراقبة AI</h3>
+          <p>ترويج لنظام ذكاء اصطناعي بُني بفريق (Python, TensorFlow, Streamlit) يرصد 8 حالات بشرية آنياً ويُرسل تنبيهات فورية عند كشف عنف.</p>
+          <button class="btn btn-sm watch"
+            data-video="https://drive.google.com/file/d/1Ngkfw4gEgJHiWLMnGaxEFAvdhl7G3s27/view?usp=sharing"
+            data-title="SafeWatch، ترويج نظام مراقبة AI">مشاهدة</button>
+        </div>
+      </article>
+
+      <article class="card video-card">
+        <div class="thumb">
+          <img src="assets/img/thumb-4.jpg" alt="مشروع CropMind" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)';this.style.display='none'">
+          <div class="play-overlay"><div class="play-icon"></div></div>
+        </div>
+        <div class="card-body">
+          <p class="date">05/2026 – 08/2026</p>
+          <h3>CropMind، منصة زراعة AI</h3>
+          <p>ترويج لمنصة زراعية بالذكاء الاصطناعي شاركت في بنائها: 7 وكلاء AI، 4 نماذج ML/DL، ودقة تصنيف 94% عبر 23 فئة.</p>
+          <button class="btn btn-sm watch"
+            data-video="https://drive.google.com/file/d/1_wkObpsraXaTaOSqb5zQxx4-lYzvFbs2/view?usp=sharing"
+            data-title="CropMind، منصة زراعة AI">مشاهدة</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 3. CASE STUDY -->
+<section id="case-study" class="section reveal" aria-labelledby="cs-h">
+  <div class="container">
+    <p class="kicker">دراسة حالة</p>
+    <h2 id="cs-h">متجر Salla للدروب شيبينج</h2>
+    <p class="sub">06/2026 · بُني وأُطلق في 14 يوماً</p>
+    <div class="cs-grid">
+
+      <div class="cs-block">
+        <h3>التحدي</h3>
+        <p>بناء وإطلاق متجر دروب شيبينج كامل على Salla من الصفر في 14 يوماً، يشمل الهوية البصرية وبحث المنتجات والحملات الإعلانية المدفوعة.</p>
       </div>
-    </section>
 
-    <!-- 2. FEATURED WORK -->
-    <section id="work" class="section reveal" aria-labelledby="work-h">
-      <div class="container">
-        <p class="kicker">Work</p>
-        <h2 id="work-h">Featured work: AI video ads</h2>
-        <p class="sub">Made with Google Flow. Personal and portfolio projects.</p>
-        <div class="grid video-grid">
-
-          <article class="card video-card">
-            <div class="thumb" role="img" aria-label="TikTok Product Ads thumbnail"><span>Thumbnail</span></div>
-            <div class="card-body">
-              <p class="date">09/2026 – 10/2026</p>
-              <h3>TikTok Product Ads</h3>
-              <p>Short-form product ads for TikTok, with prompts and scenes designed to capture attention in the first seconds.</p>
-              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_1" data-title="TikTok Product Ads">Watch</button>
-            </div>
-          </article>
-
-          <article class="card video-card">
-            <div class="thumb" role="img" aria-label="Brand Ad and Company Introduction thumbnail"><span>Thumbnail</span></div>
-            <div class="card-body">
-              <p class="date">07/2026 – 08/2026</p>
-              <h3>Brand Ad &amp; Company Introduction, 3M4 Media</h3>
-              <p>A self-initiated marketing video introducing 3M4 Media and its services, made as a gift to the company's owners for social media use.</p>
-              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_2" data-title="Brand Ad &amp; Company Introduction, 3M4 Media">Watch</button>
-            </div>
-          </article>
-
-          <article class="card video-card">
-            <div class="thumb" role="img" aria-label="SafeWatch AI Surveillance Promo thumbnail"><span>Thumbnail</span></div>
-            <div class="card-body">
-              <p class="date">06/2026 – 08/2026</p>
-              <h3>SafeWatch, AI Surveillance Promo</h3>
-              <p>Promo for a team-built AI system (Python, TensorFlow, Streamlit) that detects 8 human actions in real time and emails instant alerts when fighting is detected.</p>
-              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_3" data-title="SafeWatch, AI Surveillance Promo">Watch</button>
-            </div>
-          </article>
-
-          <article class="card video-card">
-            <div class="thumb" role="img" aria-label="CropMind AI Agriculture Platform Promo thumbnail"><span>Thumbnail</span></div>
-            <div class="card-body">
-              <p class="date">05/2026 – 08/2026</p>
-              <h3>CropMind, AI Agriculture Platform Promo</h3>
-              <p>Promo for an AI agriculture platform I helped build: 7 AI agents, 4 ML/DL models, and 94% classification accuracy across 23 classes.</p>
-              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_4" data-title="CropMind, AI Agriculture Platform Promo">Watch</button>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. CASE STUDY -->
-    <section id="case-study" class="section alt reveal" aria-labelledby="cs-h">
-      <div class="container">
-        <p class="kicker">Case study</p>
-        <h2 id="cs-h">Case study: Salla dropshipping store</h2>
-        <p class="sub">06/2026 · Built and launched in 14 days</p>
-        <div class="cs-grid">
-
-          <div class="cs-block">
-            <h3>Challenge</h3>
-            <p>Build and launch a complete dropshipping store on Salla from scratch in 14 days — including visual identity, product research, and paid campaigns.</p>
-          </div>
-
-          <div class="cs-block">
-            <h3>What I did</h3>
-            <ol class="steps">
-              <li>Store setup: domain connection, payment gateways, shipping companies.</li>
-              <li>Visual identity: logo, color palette, homepage banners. Theme customization for a smooth UX/UI.</li>
-              <li>Product and supplier research with Salla-supported apps.</li>
-              <li>Conversion-focused product descriptions.</li>
-              <li>Marketing plan and ad copywriting.</li>
-              <li>Paid social media campaigns (Meta &amp; TikTok).</li>
-              <li>Performance tracking (ROAS, Conversion Rate) and optimization.</li>
-            </ol>
-          </div>
-
-          <div class="cs-block outcome">
-            <h3>Outcome</h3>
-            <p>Delivered a complete, ready-to-sell store on time.</p>
-            <div class="outcome-metrics">
-              <div class="metric">
-                <strong>14</strong>
-                <span>Days from zero to launch</span>
-              </div>
-              <div class="metric">
-                <strong>100%</strong>
-                <span>On-time delivery</span>
-              </div>
-            </div>
-            <!-- TODO: add real ROAS / orders numbers when available -->
-          </div>
-
-        </div>
-
-        <!-- TODO: replace with real Salla screenshots -->
-        <div class="gallery" aria-label="Store screenshots">
-          <div class="shot" role="img" aria-label="Screenshot placeholder 1"><span>Screenshot 1</span></div>
-          <div class="shot" role="img" aria-label="Screenshot placeholder 2"><span>Screenshot 2</span></div>
-          <div class="shot" role="img" aria-label="Screenshot placeholder 3"><span>Screenshot 3</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. ANALYTICS -->
-    <section id="analytics" class="section reveal" aria-labelledby="an-h">
-      <div class="container">
-        <p class="kicker">Analytics</p>
-        <h2 id="an-h">Analytics &amp; dashboards</h2>
-        <p class="sub">Supporting projects using Power BI, Python, and ML.</p>
-        <div class="grid two">
-
-          <article class="card">
-            <div class="shot wide" role="img" aria-label="Dashboard placeholder: Retail Analytics AI Platform"><span>Dashboard image</span></div>
-            <div class="card-body">
-              <p class="date">01/2026 – 02/2026</p>
-              <h3>Retail Analytics AI Platform</h3>
-              <p>End-to-end analytics platform for demand forecasting, customer segmentation, and sales performance using ML models. Automated data pipelines and interactive Power BI dashboards turn sales and customer data into actionable insights.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="shot wide" role="img" aria-label="Dashboard placeholder: Saudi Tourism Intelligence"><span>Dashboard image</span></div>
-            <div class="card-body">
-              <p class="date">06/2026 – 08/2026</p>
-              <h3>Saudi Tourism Intelligence, BI Platform</h3>
-              <p>Analyzed large-scale tourism datasets using statistical modeling and ML to identify consumer behavior trends. Automated ETL pipelines and interactive Power BI dashboards for KPI monitoring.</p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. EXPERIENCE -->
-    <section id="experience" class="section alt reveal" aria-labelledby="ex-h">
-      <div class="container">
-        <p class="kicker">Experience</p>
-        <h2 id="ex-h">Experience</h2>
-        <ol class="timeline">
-          <li>
-            <p class="date">04/2021 – 10/2023</p>
-            <h3>Data &amp; Marketing Analyst</h3>
-            <p class="meta">3M4Media · Tanta, Egypt</p>
-            <ul>
-              <li>Analyzed large-scale marketing campaign performance data across MENA markets using statistical analysis and ML to identify trends and optimize campaigns.</li>
-              <li>Built and maintained KPI dashboards and automated reporting in Power BI and Excel for senior management.</li>
-              <li>Managed paid campaigns on <strong>Meta, TikTok, Google, and Snapchat</strong> — tracked ROAS, CTR, CPA, and Conversion Rate.</li>
-              <li>Cleaned, validated, and transformed datasets from multiple sources for accurate reporting.</li>
-              <li>Automated analytical and reporting workflows with AI tools.</li>
-              <li>Presented findings as clear visualizations and structured reports for non-technical stakeholders.</li>
-            </ul>
-          </li>
-          <li>
-            <p class="date">12/2025 – 09/2026</p>
-            <h3>Specialized Diploma in Applied AI &amp; Data Analysis</h3>
-            <p class="meta">Military Technical College (MTC) &amp; MCIT</p>
-          </li>
-          <li>
-            <p class="date">10/2019 – 05/2023</p>
-            <h3>B.Sc. Computer Science</h3>
-            <p class="meta">Higher Institute for Computer Science and Information Systems</p>
-          </li>
+      <div class="cs-block">
+        <h3>ما قمت به</h3>
+        <ol class="steps">
+          <li>إعداد المتجر: ربط الدومين، بوابات الدفع، شركات الشحن.</li>
+          <li>الهوية البصرية: شعار، ألوان، بنرات الرئيسية، وتخصيص القالب.</li>
+          <li>بحث المنتجات والموردين عبر تطبيقات Salla.</li>
+          <li>كتابة وصف منتجات يعزز التحويل.</li>
+          <li>خطة تسويقية وكتابة إعلانات.</li>
+          <li>حملات مدفوعة على Meta وTikTok.</li>
+          <li>قياس الأداء (ROAS، معدل التحويل) وتحسين مستمر.</li>
         </ol>
       </div>
-    </section>
 
-    <!-- 6. SKILLS -->
-    <section id="skills" class="section reveal" aria-labelledby="sk-h">
-      <div class="container">
-        <p class="kicker">Skills</p>
-        <h2 id="sk-h">Skills &amp; tools</h2>
-
-        <!-- Ad platforms — prominent for Saudi employer -->
-        <h3 style="margin-block: 1.5rem .75rem; color: var(--accent);">Digital Advertising Platforms</h3>
-        <div class="platforms-grid">
-          <div class="platform-card"><span class="platform-icon" style="background:#1877F2;color:#fff">f</span> Meta Ads (Facebook &amp; Instagram)</div>
-          <div class="platform-card"><span class="platform-icon" style="background:#000;color:#fff">T</span> TikTok Ads</div>
-          <div class="platform-card"><span class="platform-icon" style="background:#4285F4;color:#fff">G</span> Google Ads</div>
-          <div class="platform-card"><span class="platform-icon" style="background:#FFFC00;color:#000">👻</span> Snapchat Ads</div>
-        </div>
-
-        <div class="skill-groups" style="margin-block-start: 2rem;">
-          <div>
-            <h3>Marketing &amp; Performance Analytics</h3>
-            <ul class="chips">
-              <li>KPI Monitoring</li>
-              <li>ROAS</li><li>CPA</li><li>CTR</li><li>Conversion Rate</li>
-              <li>Campaign Optimization</li>
-              <li>Customer Segmentation</li>
-              <li>Forecasting</li>
-              <li>Automated Reporting</li>
-            </ul>
-          </div>
-          <div>
-            <h3>E-commerce &amp; Digital Marketing</h3>
-            <ul class="chips">
-              <li>Salla</li><li>Dropshipping</li><li>Product Research</li>
-              <li>Ad Copywriting</li><li>Store Setup &amp; Optimization</li>
-              <li>Brand Identity</li><li>AI Video Ads (Google Flow)</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Analytics &amp; BI</h3>
-            <ul class="chips">
-              <li>Power BI</li><li>Excel (Advanced)</li><li>DAX</li>
-              <li>Power Query</li><li>Tableau</li><li>SQL</li><li>Python</li>
-            </ul>
-          </div>
-          <div>
-            <h3>AI &amp; Automation</h3>
-            <ul class="chips">
-              <li>Generative AI</li><li>Prompt Engineering</li>
-              <li>AI Workflow Automation</li><li>ChatGPT</li><li>Claude</li>
-            </ul>
-          </div>
+      <div class="cs-block outcome">
+        <h3>النتيجة</h3>
+        <p>متجر كامل جاهز للبيع، سُلِّم في الوقت المحدد.</p>
+        <div class="outcome-metrics">
+          <div class="metric"><strong>14</strong><span>يوماً من الصفر حتى الإطلاق</span></div>
+          <div class="metric"><strong>100%</strong><span>التزام بالموعد</span></div>
         </div>
       </div>
-    </section>
 
-    <!-- 7. CERTIFICATIONS -->
-    <section id="certs" class="section alt reveal" aria-labelledby="ce-h">
-      <div class="container">
-        <p class="kicker">Certifications</p>
-        <h2 id="ce-h">Certifications</h2>
-        <ul class="certs">
-          <li style="--i:0"><span>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>Jul 2026</time></li>
-          <li style="--i:1"><span>Google Data Analytics Professional Certificate</span><time>Mar 2026</time></li>
-          <li style="--i:2"><span>IBM AI Engineering Professional Certificate</span><time>May 2026</time></li>
-          <li style="--i:3"><span>Microsoft Certified: Azure Data Fundamentals (DP-900)</span><time>Jul 2026</time></li>
-          <li style="--i:4"><span>AI Agent Fundamentals with Azure AI Foundry</span><time>Sep 2026</time></li>
+    </div>
+
+    <div class="gallery" aria-label="لقطات المتجر">
+      <div class="shot">
+        <img src="assets/img/salla-1.jpg" alt="لقطة متجر Salla 1" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)'">
+      </div>
+      <div class="shot">
+        <img src="assets/img/salla-2.jpg" alt="لقطة متجر Salla 2" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)'">
+      </div>
+      <div class="shot">
+        <img src="assets/img/salla-3.jpg" alt="لقطة متجر Salla 3" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ANALYTICS -->
+<section id="analytics" class="section alt reveal" aria-labelledby="an-h">
+  <div class="container">
+    <p class="kicker">التحليلات</p>
+    <h2 id="an-h">التحليلات ولوحات البيانات</h2>
+    <p class="sub">مشاريع داعمة بـ Power BI وPython والتعلم الآلي</p>
+    <div class="grid two">
+
+      <article class="card">
+        <div class="shot wide">
+          <img src="assets/img/dashboard-retail.jpg" alt="منصة تحليلات التجزئة AI" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)'">
+        </div>
+        <div class="card-body">
+          <p class="date">01/2026 – 02/2026</p>
+          <h3>منصة تحليلات التجزئة بالذكاء الاصطناعي</h3>
+          <p>منصة تحليلية متكاملة للتنبؤ بالطلب، تقسيم العملاء، وأداء المبيعات باستخدام نماذج ML. خطوط بيانات آلية ولوحات Power BI تفاعلية.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot wide">
+          <img src="assets/img/dashboard-tourism.jpg" alt="منصة ذكاء السياحة السعودية" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)'">
+        </div>
+        <div class="card-body">
+          <p class="date">06/2026 – 08/2026</p>
+          <h3>ذكاء السياحة السعودية، منصة BI</h3>
+          <p>تحليل بيانات سياحية ضخمة باستخدام النمذجة الإحصائية والتعلم الآلي لرصد اتجاهات سلوك المستهلك. خطوط ETL آلية ولوحات Power BI لمتابعة KPIs.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5. EXPERIENCE -->
+<section id="experience" class="section reveal" aria-labelledby="ex-h">
+  <div class="container">
+    <p class="kicker">الخبرة</p>
+    <h2 id="ex-h">المسيرة المهنية</h2>
+    <ol class="timeline">
+      <li>
+        <p class="date">04/2021 – 10/2023</p>
+        <h3>محللة بيانات وتسويق</h3>
+        <p class="meta">3M4 Media · طنطا، مصر</p>
+        <ul>
+          <li>تحليل بيانات أداء حملات تسويقية ضخمة في أسواق MENA باستخدام التحليل الإحصائي والتعلم الآلي.</li>
+          <li>بناء وصيانة لوحات KPI وتقارير آلية بـ Power BI وExcel للإدارة العليا.</li>
+          <li>إدارة حملات مدفوعة على <strong>Meta وTikTok وGoogle وSnapchat</strong> مع متابعة ROAS وCTR وCPA.</li>
+          <li>تنظيف البيانات وتحويلها من مصادر متعددة لضمان دقة التقارير.</li>
+          <li>أتمتة سير العمل التحليلي والتقارير باستخدام أدوات الذكاء الاصطناعي.</li>
+          <li>تقديم النتائج كتصورات واضحة لغير المتخصصين.</li>
+        </ul>
+      </li>
+      <li>
+        <p class="date">12/2025 – 09/2026</p>
+        <h3>دبلوم متخصص في الذكاء الاصطناعي التطبيقي وتحليل البيانات</h3>
+        <p class="meta">الكلية التقنية العسكرية (MTC) ووزارة الاتصالات (MCIT)</p>
+      </li>
+      <li>
+        <p class="date">10/2019 – 05/2023</p>
+        <h3>بكالوريوس علوم الحاسب</h3>
+        <p class="meta">المعهد العالي لعلوم الحاسب ونظم المعلومات</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. SKILLS -->
+<section id="skills" class="section alt reveal" aria-labelledby="sk-h">
+  <div class="container">
+    <p class="kicker">المهارات</p>
+    <h2 id="sk-h">المهارات والأدوات</h2>
+
+    <h3 class="accent-h3">منصات الإعلانات الرقمية</h3>
+    <div class="platforms-grid">
+      <div class="platform-card"><span class="platform-icon" style="background:#1877F2;color:#fff">f</span> Meta Ads (فيسبوك وإنستغرام)</div>
+      <div class="platform-card"><span class="platform-icon" style="background:#000;color:#fff">T</span> TikTok Ads</div>
+      <div class="platform-card"><span class="platform-icon" style="background:#4285F4;color:#fff">G</span> Google Ads</div>
+      <div class="platform-card"><span class="platform-icon" style="background:#FFFC00;color:#000">👻</span> Snapchat Ads</div>
+    </div>
+
+    <div class="skill-groups">
+      <div>
+        <h3>التسويق وتحليل الأداء</h3>
+        <ul class="chips">
+          <li>مراقبة KPI</li><li>ROAS</li><li>CPA</li><li>CTR</li><li>معدل التحويل</li>
+          <li>تحسين الحملات</li><li>تقسيم العملاء</li><li>التنبؤ</li><li>التقارير الآلية</li>
         </ul>
       </div>
-    </section>
-
-    <!-- 8. CONTACT -->
-    <section id="contact" class="section contact reveal" aria-labelledby="co-h">
-      <div class="container">
-        <p class="kicker">Contact</p>
-        <h2 id="co-h">Let's work together</h2>
-        <p class="lead">Open to Marketing Specialist roles in Saudi Arabia.</p>
-        <p class="sub">Languages: Arabic (native), English (professional working proficiency).</p>
-        <div class="actions">
-          <a class="btn btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-outline" href="mailto:goda.emade2001@gmail.com">Email</a>
-          <a class="btn btn-outline" href="https://linkedin.com/in/goda-emad" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-outline" href="https://github.com/Goda-Emad" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>Download CV</a>
-        </div>
+      <div>
+        <h3>التجارة الإلكترونية والتسويق</h3>
+        <ul class="chips">
+          <li>Salla</li><li>دروب شيبينج</li><li>بحث المنتجات</li>
+          <li>كتابة الإعلانات</li><li>إعداد المتاجر</li>
+          <li>الهوية البصرية</li><li>إعلانات فيديو AI (Google Flow)</li>
+        </ul>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container foot">
-      <p>© <span id="year">2026</span> Goda Emad</p>
-      <a href="#top">Back to top ↑</a>
+      <div>
+        <h3>التحليلات وذكاء الأعمال</h3>
+        <ul class="chips">
+          <li>Power BI</li><li>Excel (متقدم)</li><li>DAX</li>
+          <li>Power Query</li><li>Tableau</li><li>SQL</li><li>Python</li>
+        </ul>
+      </div>
+      <div>
+        <h3>الذكاء الاصطناعي والأتمتة</h3>
+        <ul class="chips">
+          <li>Generative AI</li><li>Prompt Engineering</li>
+          <li>أتمتة سير العمل</li><li>ChatGPT</li><li>Claude</li>
+        </ul>
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Floating WhatsApp (mobile) -->
-  <a class="fab" href="https://wa.me/201126242932" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+<!-- 7. CERTIFICATIONS -->
+<section id="certs" class="section reveal" aria-labelledby="ce-h">
+  <div class="container">
+    <p class="kicker">الشهادات</p>
+    <h2 id="ce-h">الشهادات الاحترافية</h2>
+    <ul class="certs">
+      <li><span>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>يوليو 2026</time></li>
+      <li><span>Google Data Analytics Professional Certificate</span><time>مارس 2026</time></li>
+      <li><span>IBM AI Engineering Professional Certificate</span><time>مايو 2026</time></li>
+      <li><span>Microsoft Certified: Azure Data Fundamentals (DP-900)</span><time>يوليو 2026</time></li>
+      <li><span>AI Agent Fundamentals with Azure AI Foundry</span><time>سبتمبر 2026</time></li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Video modal -->
-  <dialog id="videoModal" aria-labelledby="modalTitle">
-    <div class="modal-head">
-      <h3 id="modalTitle"></h3>
-      <button class="close" id="closeModal" aria-label="Close video">×</button>
+<!-- 8. CONTACT -->
+<section id="contact" class="section alt contact reveal" aria-labelledby="co-h">
+  <div class="container">
+    <p class="kicker">تواصل</p>
+    <h2 id="co-h">لنعمل معاً</h2>
+    <p class="lead">متاحة لوظائف أخصائية تسويق في المملكة العربية السعودية.</p>
+    <p class="sub">اللغات: العربية (اللغة الأم)، الإنجليزية (مستوى احترافي).</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn btn-wa" href="https://wa.me/201126242932" target="_blank" rel="noopener">واتساب</a>
+      <a class="btn btn-outline" href="mailto:goda.emade2001@gmail.com">البريد الإلكتروني</a>
+      <a class="btn btn-outline" href="https://linkedin.com/in/goda-emad" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-outline" href="https://github.com/Goda-Emad" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>تحميل السيرة الذاتية</a>
     </div>
-    <div class="modal-body" id="modalBody" data-soon="Video coming soon."></div>
-  </dialog>
+  </div>
+</section>
 
-  <script src="assets/js/main.js?v=3" defer></script>
-  <script src="assets/js/motion.js?v=4" defer></script>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <p>© <span id="year">2026</span> جودة عماد</p>
+    <a href="#top">العودة للأعلى ↑</a>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/201126242932" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب</a>
+
+<!-- Video Modal -->
+<dialog id="videoModal" aria-labelledby="modalTitle">
+  <div class="modal-head">
+    <h3 id="modalTitle"></h3>
+    <button class="close" id="closeModal" aria-label="إغلاق">×</button>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+</dialog>
+
+<script>
+(function(){
+  'use strict';
+  var doc = document;
+  var root = doc.documentElement;
+
+  /* Year */
+  var yr = doc.getElementById('year');
+  if(yr) yr.textContent = new Date().getFullYear();
+
+  /* Theme */
+  var THEME_KEY = 'goda-theme';
+  function applyTheme(t){
+    root.setAttribute('data-theme',t);
+    localStorage.setItem(THEME_KEY,t);
+    var tb = doc.getElementById('themeToggle');
+    if(tb){
+      tb.setAttribute('aria-label', t==='dark' ? 'تبديل إلى الوضع النهاري' : 'تبديل إلى الوضع الليلي');
+      tb.setAttribute('aria-pressed', t==='dark' ? 'true' : 'false');
+    }
+  }
+  doc.addEventListener('DOMContentLoaded', function(){
+    var tb = doc.getElementById('themeToggle');
+    if(tb) tb.addEventListener('click', function(){
+      applyTheme(root.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
+    });
+  });
+
+  /* Mobile menu */
+  var btn = doc.getElementById('menuBtn');
+  var nav = doc.getElementById('nav');
+  function setMenu(open){
+    if(!nav||!btn) return;
+    nav.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',String(open));
+    btn.setAttribute('aria-label', open ? (btn.dataset.labelClose||'إغلاق القائمة') : (btn.dataset.labelOpen||'فتح القائمة'));
+  }
+  if(btn&&nav){
+    btn.addEventListener('click',function(){setMenu(btn.getAttribute('aria-expanded')!=='true');});
+    nav.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false);});
+    doc.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);btn.focus();}});
+  }
+
+  /* Scroll progress + header shadow */
+  var header = doc.querySelector('.site-header');
+  var bar = doc.getElementById('progress');
+  var ticking = false;
+  function onScroll(){
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(function(){
+      var y = window.scrollY;
+      var max = doc.documentElement.scrollHeight - window.innerHeight;
+      if(header) header.classList.toggle('scrolled', y>8);
+      if(bar) bar.style.transform='scaleX('+(max>0?Math.min(y/max,1):0)+')';
+      ticking=false;
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  /* Scroll spy */
+  var navLinks = doc.querySelectorAll('.nav a[href^="#"]');
+  if('IntersectionObserver' in window){
+    var map={};
+    navLinks.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+    var spy=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        navLinks.forEach(function(l){l.classList.remove('active');l.removeAttribute('aria-current');});
+        var a=map[en.target.id];
+        if(a){a.classList.add('active');a.setAttribute('aria-current','true');}
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){var s=doc.getElementById(id);if(s)spy.observe(s);});
+  }
+
+  /* Video modal — Google Drive links */
+  var modal    = doc.getElementById('videoModal');
+  var mbody    = doc.getElementById('modalBody');
+  var mtitle   = doc.getElementById('modalTitle');
+  var closeBtn = doc.getElementById('closeModal');
+  var lastTrig = null;
+
+  function closeModal(){if(modal&&modal.open)modal.close();}
+
+  function driveEmbedUrl(url){
+    // Convert share URL to embed URL
+    var m = url.match(/\/file\/d\/([^/]+)/);
+    if(m) return 'https://drive.google.com/file/d/'+m[1]+'/preview';
+    return null;
+  }
+
+  function openVideo(trigger){
+    var url   = trigger.getAttribute('data-video')||'';
+    var title = trigger.getAttribute('data-title')||'';
+    lastTrig  = trigger;
+    mtitle.textContent = title;
+    mbody.innerHTML    = '';
+
+    var embedUrl = driveEmbedUrl(url);
+    if(embedUrl){
+      var f = doc.createElement('iframe');
+      f.src   = embedUrl;
+      f.title = title;
+      f.loading = 'lazy';
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      mbody.appendChild(f);
+    } else {
+      var p = doc.createElement('p');
+      p.textContent = 'الفيديو قيد الإعداد.';
+      var a = doc.createElement('a');
+      a.href = url; a.target='_blank'; a.rel='noopener';
+      a.className='drive-btn'; a.textContent='فتح في Drive';
+      mbody.appendChild(p); mbody.appendChild(a);
+    }
+
+    if(modal){
+      if(typeof modal.showModal==='function') modal.showModal();
+      else modal.setAttribute('open','');
+    }
+  }
+
+  if(modal){
+    doc.querySelectorAll('.watch').forEach(function(b){
+      b.addEventListener('click',function(){openVideo(b);});
+    });
+    if(closeBtn) closeBtn.addEventListener('click',closeModal);
+    modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
+    modal.addEventListener('close',function(){
+      mbody.innerHTML='';
+      if(lastTrig) lastTrig.focus();
+    });
+  }
+
+  /* Reveal on scroll */
+  var items  = doc.querySelectorAll('.reveal');
+  var reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window)){
+    items.forEach(function(el){el.classList.add('visible');});
+  } else {
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target);}
+      });
+    },{threshold:0.08});
+    items.forEach(function(el){io.observe(el);});
+  }
+
+  /* Thumb click → open modal */
+  doc.querySelectorAll('.video-card .thumb').forEach(function(thumb){
+    thumb.style.cursor='pointer';
+    thumb.addEventListener('click',function(){
+      var btn=thumb.closest('.video-card').querySelector('.watch');
+      if(btn) openVideo(btn);
+    });
+  });
+
+})();
+</script>
 </body>
 </html>
