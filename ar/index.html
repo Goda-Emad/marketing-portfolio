@@ -27,8 +27,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=2">
-  <link rel="stylesheet" href="../assets/css/rtl.css?v=2">
+  <link rel="stylesheet" href="../assets/css/style.css?v=3">
+  <link rel="stylesheet" href="../assets/css/rtl.css?v=3">
 </head>
 <body>
   <a class="skip" href="#main">الانتقال إلى المحتوى</a>
@@ -85,7 +85,7 @@
         <h2 id="work-h">أعمال مميزة: إعلانات فيديو بالذكاء الاصطناعي</h2>
         <p class="sub">صُنعت باستخدام <bdi lang="en">Google Flow</bdi>. مشاريع شخصية لمعرض الأعمال.</p>
         <div class="grid video-grid">
-          <!-- TODO per card: set data-video to the YouTube video ID; replace .thumb div with <img src="../assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
+          <!-- TODO per card: set data-video to the YouTube video ID; put the thumbnail <img> INSIDE the .thumb div, e.g. <img src="../assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
           <article class="card video-card">
             <div class="thumb" role="img" aria-label="مكان الصورة المصغرة: إعلانات منتجات على TikTok"><span>صورة مصغرة</span></div>
             <div class="card-body">
@@ -310,5 +310,6 @@
   </dialog>
 
   <script src="../assets/js/main.js?v=2" defer></script>
+  <script src="../assets/js/motion.js?v=3" defer></script>
 </body>
 </html>
