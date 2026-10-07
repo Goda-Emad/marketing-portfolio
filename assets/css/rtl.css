@@ -1,10 +1,9 @@
-/* File: marketing-portfolio/assets/css/rtl.css */
-/* Loaded AFTER style.css on ar/index.html only. Overrides for Arabic typography and RTL.
-   Layout already mirrors through logical properties in style.css (timeline line and dots,
-   modal padding, skip link, floating button, cs-grid order), so none of that is repeated here. */
+/* File: marketing-portfolio/assets/css/rtl.css — v4
+   Loaded AFTER style.css on ar/index.html only.
+   Layout already mirrors via logical properties in style.css. */
 
+/* ── TYPOGRAPHY ── */
 :root {
-  /* Inter handles Latin words and digits; Arabic glyphs fall through to Cairo. */
   --font: "Inter", "Cairo", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
 }
 
@@ -23,21 +22,57 @@ h1 { font-weight: 700; line-height: 1.4; }
 h2 { line-height: 1.45; }
 h3 { line-height: 1.5; }
 
-.lead { font-size: 1.2rem; line-height: 1.9; }
-.btn { line-height: 1.3; }
-.date { font-size: .92rem; }
+.lead    { font-size: 1.2rem; line-height: 1.9; }
+.btn     { line-height: 1.3; }
+.date    { font-size: .92rem; }
+
 .stats span,
 .card-body p:not(.date),
 .cs-block ul,
 .timeline ul { line-height: 1.85; }
+
 .chips li { font-size: .98rem; line-height: 1.6; }
 
-/* Latin words keep their own font and normal line height */
-[lang="en"] { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+/* Latin text keeps Inter */
+[lang="en"] {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
 
-/* English certification names are forced LTR; keep them aligned to the right edge */
-.certs span[dir="ltr"] { text-align: end; }
+/* ── DARK MODE: theme-toggle aria-label in Arabic ── */
+/* Updated by main.js — no CSS needed, just kept here as a note */
 
-/* Mirror directional arrows if any are added inside buttons (none used right now) */
+/* ── CERTIFICATIONS: English names stay LTR, aligned to the end ── */
+.certs span[dir="ltr"] {
+  text-align: end;
+}
+
+/* ── PLATFORM CARDS: flex direction stays row in RTL ── */
+.platform-card {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+/* ── KPI PILLS: number/label order is fine in RTL ── */
+.kpi-pill {
+  direction: rtl;
+}
+
+/* ── OUTCOME METRICS: numbers are LTR digits ── */
+.metric strong {
+  direction: ltr;
+  text-align: center;
+}
+
+/* ── MIRROR directional arrows if added in buttons ── */
 .btn .arrow,
-.icon-arrow { display: inline-block; transform: scaleX(-1); }
+.icon-arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+/* ── DARK MODE: header background already handled in style.css ── */
+
+/* ── STATS: strong numbers are digits, keep LTR ── */
+.stats strong {
+  direction: ltr;
+}
