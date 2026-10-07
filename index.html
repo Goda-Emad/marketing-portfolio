@@ -1,95 +1,301 @@
-/* File: marketing-portfolio/assets/js/main.js */
-(function () {
-  'use strict';
+<!-- File: marketing-portfolio/index.html -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goda Emad | Digital Marketing &amp; Data Analyst</title>
+  <meta name="description" content="Portfolio of Goda Emad: data-driven digital marketing specialist. KPI analytics, AI-generated video ads, and e-commerce campaigns.">
+  <!-- TODO: confirm canonical URL after publishing -->
+  <link rel="canonical" href="https://goda-emad.github.io/marketing-portfolio/">
+  <link rel="alternate" hreflang="ar" href="https://goda-emad.github.io/marketing-portfolio/ar/">
 
-  var doc = document;
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Goda Emad | Digital Marketing &amp; Data Analyst">
+  <meta property="og:description" content="I turn campaign data into marketing decisions. KPI analytics, AI video ads, e-commerce.">
+  <!-- TODO: add assets/img/og-image.jpg (1200x630). Social crawlers prefer an absolute URL, so this one is absolute. -->
+  <meta property="og:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://goda-emad.github.io/marketing-portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Goda Emad | Digital Marketing &amp; Data Analyst">
+  <meta name="twitter:description" content="I turn campaign data into marketing decisions.">
+  <meta name="twitter:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
 
-  // Year
-  var year = doc.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  // Mobile menu
-  var btn = doc.getElementById('menuBtn');
-  var nav = doc.getElementById('nav');
-  function setMenu(open) {
-    nav.classList.toggle('open', open);
-    btn.setAttribute('aria-expanded', String(open));
-    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  }
-  if (btn && nav) {
-    btn.addEventListener('click', function () {
-      setMenu(btn.getAttribute('aria-expanded') !== 'true');
-    });
-    nav.addEventListener('click', function (e) {
-      if (e.target.closest('a')) setMenu(false);
-    });
-    doc.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && nav.classList.contains('open')) {
-        setMenu(false);
-        btn.focus();
-      }
-    });
-  }
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="#top" aria-label="Goda Emad, home">Goda Emad</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#case-study">Case study</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="ar/index.html" lang="ar" hreflang="ar" aria-label="Arabic version">AR</a>
+        <!-- TODO: confirm WhatsApp number -->
+        <a class="btn btn-sm" href="https://wa.me/201126242932" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
 
-  // Video modal (iframe created only on click; <dialog> handles focus and Esc)
-  var modal = doc.getElementById('videoModal');
-  var body = doc.getElementById('modalBody');
-  var title = doc.getElementById('modalTitle');
-  var closeBtn = doc.getElementById('closeModal');
-  var lastTrigger = null;
+  <main id="main">
+    <!-- 1. HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="eyebrow">Digital Marketing &amp; Data Analyst · New Cairo, Egypt</p>
+        <h1>I turn campaign data into marketing decisions.</h1>
+        <p class="lead">Data-driven digital marketing specialist: KPI analytics, AI-generated video ads, and e-commerce campaigns.</p>
+        <div class="actions">
+          <a class="btn" href="#work">View my work</a>
+          <!-- TODO: confirm WhatsApp number -->
+          <a class="btn btn-outline" href="https://wa.me/201126242932" target="_blank" rel="noopener">WhatsApp me</a>
+          <!-- TODO: add assets/cv/Goda_Emad_CV.pdf -->
+          <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>Download CV</a>
+        </div>
+        <ul class="stats" aria-label="Key facts">
+          <li><strong>2.5 years</strong><span>in marketing analytics at 3M4Media</span></li>
+          <li><strong>4</strong><span>AI video ads produced</span></li>
+          <li><strong>3</strong><span>professional certifications (PL-300, Google Data Analytics, IBM AI Engineering)</span></li>
+        </ul>
+      </div>
+    </section>
 
-  function closeModal() {
-    if (modal.open) modal.close();
-  }
-  function openVideo(trigger) {
-    var id = trigger.getAttribute('data-video') || '';
-    lastTrigger = trigger;
-    title.textContent = trigger.getAttribute('data-title') || '';
-    body.textContent = '';
-    // TODO: replace the YOUTUBE_ID_x placeholders in index.html with real video IDs
-    if (!id || id.indexOf('YOUTUBE_ID') === 0) {
-      body.textContent = 'Video coming soon.';
-    } else {
-      var f = doc.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
-      f.title = title.textContent;
-      f.loading = 'lazy';
-      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-      f.allowFullscreen = true;
-      body.appendChild(f);
-    }
-    if (typeof modal.showModal === 'function') modal.showModal();
-    else modal.setAttribute('open', '');
-  }
+    <!-- 2. FEATURED WORK -->
+    <section id="work" class="section reveal" aria-labelledby="work-h">
+      <div class="container">
+        <h2 id="work-h">Featured work: AI video ads</h2>
+        <p class="sub">Made with Google Flow. Personal and portfolio projects.</p>
+        <div class="grid video-grid">
+          <!-- TODO for each card: set data-video to the YouTube video ID, and add a thumbnail image in assets/img/ (replace the .thumb div with <img src="assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy">) -->
+          <article class="card video-card">
+            <div class="thumb" role="img" aria-label="Thumbnail placeholder: TikTok Product Ads"><span>Thumbnail</span></div>
+            <div class="card-body">
+              <p class="date">09/2026 – 10/2026</p>
+              <h3>TikTok Product Ads</h3>
+              <p>Short-form product ads for TikTok, with prompts and scenes designed to capture attention in the first seconds.</p>
+              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_1" data-title="TikTok Product Ads">Watch</button>
+            </div>
+          </article>
+          <article class="card video-card">
+            <div class="thumb" role="img" aria-label="Thumbnail placeholder: Brand Ad and Company Introduction, 3M4 Media"><span>Thumbnail</span></div>
+            <div class="card-body">
+              <p class="date">07/2026 – 08/2026</p>
+              <h3>Brand Ad &amp; Company Introduction, 3M4 Media</h3>
+              <p>A self-initiated marketing video introducing 3M4 Media and its services, made as a gift to the company's owners for social media use.</p>
+              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_2" data-title="Brand Ad &amp; Company Introduction, 3M4 Media">Watch</button>
+            </div>
+          </article>
+          <article class="card video-card">
+            <div class="thumb" role="img" aria-label="Thumbnail placeholder: SafeWatch promo"><span>Thumbnail</span></div>
+            <div class="card-body">
+              <p class="date">06/2026 – 08/2026</p>
+              <h3>SafeWatch, AI Surveillance Promo</h3>
+              <p>Promo for a team-built AI system (Python, TensorFlow, Streamlit) that detects 8 human actions in real time and emails instant alerts when fighting is detected.</p>
+              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_3" data-title="SafeWatch, AI Surveillance Promo">Watch</button>
+            </div>
+          </article>
+          <article class="card video-card">
+            <div class="thumb" role="img" aria-label="Thumbnail placeholder: CropMind promo"><span>Thumbnail</span></div>
+            <div class="card-body">
+              <p class="date">05/2026 – 08/2026</p>
+              <h3>CropMind, AI Agriculture Platform Promo</h3>
+              <p>Promo for an AI agriculture platform I helped build: 7 AI agents, 4 ML/DL models, and 94% classification accuracy across 23 classes.</p>
+              <button class="btn btn-sm watch" data-video="YOUTUBE_ID_4" data-title="CropMind, AI Agriculture Platform Promo">Watch</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  if (modal) {
-    doc.querySelectorAll('.watch').forEach(function (b) {
-      b.addEventListener('click', function () { openVideo(b); });
-    });
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', function (e) {
-      if (e.target === modal) closeModal(); // backdrop click
-    });
-    modal.addEventListener('close', function () {
-      body.textContent = ''; // stops playback
-      if (lastTrigger) lastTrigger.focus();
-    });
-  }
+    <!-- 3. CASE STUDY -->
+    <section id="case-study" class="section alt reveal" aria-labelledby="cs-h">
+      <div class="container">
+        <h2 id="cs-h">Case study: Salla dropshipping store</h2>
+        <p class="sub">06/2026 · Built and launched in 14 days</p>
+        <div class="cs-grid">
+          <div class="cs-block">
+            <h3>Challenge</h3>
+            <p>Build and launch a complete dropshipping store on Salla from scratch in 14 days.</p>
+          </div>
+          <div class="cs-block">
+            <h3>What I did</h3>
+            <ul>
+              <li>Store setup: domain connection, payment gateways, shipping companies.</li>
+              <li>Visual identity: logo, color palette, homepage banners. Theme customization for a smooth UX/UI.</li>
+              <li>Product and supplier research with Salla-supported apps.</li>
+              <li>Conversion-focused product descriptions.</li>
+              <li>Marketing plan and ad copywriting.</li>
+              <li>Paid social media campaigns.</li>
+              <li>Performance tracking (ROAS, Conversion Rate) and optimization.</li>
+            </ul>
+          </div>
+          <div class="cs-block outcome">
+            <h3>Outcome</h3>
+            <p>Delivered a complete, ready-to-sell store on time.</p>
+            <!-- TODO: add real numbers here (orders, ROAS) only if you have them. Do not estimate. -->
+          </div>
+        </div>
+        <!-- TODO: replace the 3 placeholders with real Salla screenshots, e.g. <img src="assets/img/salla-1.jpg" alt="Salla store homepage" width="600" height="400" loading="lazy"> -->
+        <div class="gallery" aria-label="Store screenshots">
+          <div class="shot" role="img" aria-label="Screenshot placeholder 1"><span>Screenshot 1</span></div>
+          <div class="shot" role="img" aria-label="Screenshot placeholder 2"><span>Screenshot 2</span></div>
+          <div class="shot" role="img" aria-label="Screenshot placeholder 3"><span>Screenshot 3</span></div>
+        </div>
+      </div>
+    </section>
 
-  // Section reveal
-  var items = doc.querySelectorAll('.reveal');
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce || !('IntersectionObserver' in window)) {
-    items.forEach(function (el) { el.classList.add('visible'); });
-  } else {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) {
-          en.target.classList.add('visible');
-          io.unobserve(en.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    items.forEach(function (el) { io.observe(el); });
-  }
-})();
+    <!-- 4. ANALYTICS -->
+    <section id="analytics" class="section reveal" aria-labelledby="an-h">
+      <div class="container">
+        <h2 id="an-h">Analytics &amp; dashboards</h2>
+        <p class="sub">Supporting projects.</p>
+        <div class="grid two">
+          <!-- TODO: replace .shot with real dashboard images (width/height set, loading="lazy") -->
+          <article class="card">
+            <div class="shot wide" role="img" aria-label="Dashboard image placeholder: Retail Analytics AI Platform"><span>Dashboard image</span></div>
+            <div class="card-body">
+              <p class="date">01/2026 – 02/2026</p>
+              <h3>Retail Analytics AI Platform</h3>
+              <p>End-to-end analytics platform for demand forecasting, customer segmentation, and sales performance analysis using ML models. Automated data pipelines and interactive Power BI dashboards turn sales and customer data into actionable insights.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="shot wide" role="img" aria-label="Dashboard image placeholder: Saudi Tourism Intelligence"><span>Dashboard image</span></div>
+            <div class="card-body">
+              <p class="date">06/2026 – 08/2026</p>
+              <h3>Saudi Tourism Intelligence, BI Platform</h3>
+              <p>Analyzed large-scale tourism datasets using statistical modeling and ML to identify consumer behavior trends. Automated ETL pipelines and interactive Power BI dashboards for KPI monitoring.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE -->
+    <section id="experience" class="section alt reveal" aria-labelledby="ex-h">
+      <div class="container">
+        <h2 id="ex-h">Experience</h2>
+        <ol class="timeline">
+          <li>
+            <p class="date">04/2021 – 10/2023</p>
+            <h3>Data &amp; Marketing Analyst</h3>
+            <p class="meta">3M4Media · Tanta, Egypt</p>
+            <ul>
+              <li>Analyzed large-scale marketing campaign performance data across MENA markets using statistical analysis and ML to identify trends and optimize campaigns.</li>
+              <li>Built and maintained KPI dashboards and automated reporting in Power BI and Excel for senior management.</li>
+              <li>Cleaned, validated, and transformed datasets from multiple sources for accurate reporting.</li>
+              <li>Automated analytical and reporting workflows with AI tools.</li>
+              <li>Presented findings as clear visualizations and structured reports for non-technical stakeholders.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="date">12/2025 – 09/2026</p>
+            <h3>Specialized Diploma in Applied AI &amp; Data Analysis</h3>
+            <p class="meta">Military Technical College (MTC) &amp; MCIT</p>
+          </li>
+          <li>
+            <p class="date">10/2019 – 05/2023</p>
+            <h3>B.Sc. Computer Science</h3>
+            <p class="meta">Higher Institute for Computer Science and Information Systems</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. SKILLS -->
+    <section id="skills" class="section reveal" aria-labelledby="sk-h">
+      <div class="container">
+        <h2 id="sk-h">Skills &amp; tools</h2>
+        <div class="skill-groups">
+          <div>
+            <h3>Marketing &amp; Performance Analytics</h3>
+            <ul class="chips">
+              <li>KPI Monitoring</li><li>Campaign Performance Analysis (ROAS, CPA, CTR, Conversion Rate)</li><li>Customer Segmentation</li><li>Forecasting</li><li>Automated Reporting</li>
+            </ul>
+          </div>
+          <div>
+            <h3>E-commerce &amp; Digital Marketing</h3>
+            <ul class="chips">
+              <li>Salla</li><li>Dropshipping</li><li>Product Research</li><li>Ad Copywriting</li><li>Store Setup &amp; Optimization</li><li>Brand Identity</li><li>AI Video Ads (Google Flow)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Analytics &amp; BI</h3>
+            <ul class="chips">
+              <li>Power BI</li><li>Excel (Advanced)</li><li>DAX</li><li>Power Query</li><li>Tableau</li><li>SQL</li><li>Python</li>
+            </ul>
+          </div>
+          <div>
+            <h3>AI tools</h3>
+            <ul class="chips">
+              <li>Generative AI</li><li>Prompt Engineering</li><li>AI Workflow Automation</li><li>ChatGPT</li><li>Claude</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATIONS -->
+    <section id="certs" class="section alt reveal" aria-labelledby="ce-h">
+      <div class="container">
+        <h2 id="ce-h">Certifications</h2>
+        <ul class="certs">
+          <li><span>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>Jul 2026</time></li>
+          <li><span>Google Data Analytics Professional Certificate</span><time>Mar 2026</time></li>
+          <li><span>IBM AI Engineering Professional Certificate</span><time>May 2026</time></li>
+          <li><span>Microsoft Certified: Azure Data Fundamentals (DP-900)</span><time>Jul 2026</time></li>
+          <li><span>AI Agent Fundamentals with Azure AI Foundry</span><time>Sep 2026</time></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT -->
+    <section id="contact" class="section contact reveal" aria-labelledby="co-h">
+      <div class="container">
+        <h2 id="co-h">Contact</h2>
+        <p class="lead">Open to Marketing Specialist roles in Saudi Arabia.</p>
+        <p class="sub">Languages: Arabic (native), English (professional working proficiency).</p>
+        <div class="actions">
+          <!-- TODO: confirm WhatsApp number (+20 112 624 2932 is a placeholder) -->
+          <a class="btn" href="https://wa.me/201126242932" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:goda.emade2001@gmail.com">Email</a>
+          <a class="btn btn-outline" href="https://linkedin.com/in/goda-emad" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-outline" href="https://github.com/Goda-Emad" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Goda Emad</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp (mobile) -->
+  <a class="fab" href="https://wa.me/201126242932" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+  <!-- Video modal: iframe is created only on click -->
+  <dialog id="videoModal" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h3 id="modalTitle"></h3>
+      <button class="close" id="closeModal" aria-label="Close video">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
