@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -85,7 +85,7 @@
         <h2 id="work-h">Featured work: AI video ads</h2>
         <p class="sub">Made with Google Flow. Personal and portfolio projects.</p>
         <div class="grid video-grid">
-          <!-- TODO per card: set data-video to the YouTube video ID; replace .thumb div with <img src="assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
+          <!-- TODO per card: set data-video to the YouTube video ID; put the thumbnail <img> INSIDE the .thumb div, e.g. <img src="assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
           <article class="card video-card">
             <div class="thumb" role="img" aria-label="Thumbnail placeholder: TikTok Product Ads"><span>Thumbnail</span></div>
             <div class="card-body">
@@ -301,6 +301,7 @@
     <div class="modal-body" id="modalBody" data-soon="Video coming soon."></div>
   </dialog>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=2" defer></script>
+  <script src="assets/js/motion.js?v=3" defer></script>
 </body>
 </html>
