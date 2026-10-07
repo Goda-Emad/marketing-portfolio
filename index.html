@@ -4,23 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f33">
   <title>Goda Emad | Digital Marketing &amp; Data Analyst</title>
   <meta name="description" content="Portfolio of Goda Emad: data-driven digital marketing specialist. KPI analytics, AI-generated video ads, and e-commerce campaigns.">
   <!-- TODO: confirm canonical URL after publishing -->
   <link rel="canonical" href="https://goda-emad.github.io/marketing-portfolio/">
+  <link rel="alternate" hreflang="en" href="https://goda-emad.github.io/marketing-portfolio/">
   <link rel="alternate" hreflang="ar" href="https://goda-emad.github.io/marketing-portfolio/ar/">
-
+  <link rel="alternate" hreflang="x-default" href="https://goda-emad.github.io/marketing-portfolio/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_AR">
   <meta property="og:title" content="Goda Emad | Digital Marketing &amp; Data Analyst">
   <meta property="og:description" content="I turn campaign data into marketing decisions. KPI analytics, AI video ads, e-commerce.">
-  <!-- TODO: add assets/img/og-image.jpg (1200x630). Social crawlers prefer an absolute URL, so this one is absolute. -->
+  <!-- TODO: add assets/img/og-image.jpg (1200x630) -->
   <meta property="og:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
   <meta property="og:url" content="https://goda-emad.github.io/marketing-portfolio/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Goda Emad | Digital Marketing &amp; Data Analyst">
   <meta name="twitter:description" content="I turn campaign data into marketing decisions.">
   <meta name="twitter:image" content="https://goda-emad.github.io/marketing-portfolio/assets/img/og-image.jpg">
-
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +32,12 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container bar">
-      <a class="brand" href="#top" aria-label="Goda Emad, home">Goda Emad</a>
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <a class="brand" href="#top" aria-label="Goda Emad, home"><span class="logo" aria-hidden="true">G</span>Goda Emad</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu">
         <span></span><span></span><span></span>
       </button>
       <nav id="nav" class="nav" aria-label="Main">
@@ -56,6 +60,9 @@
         <p class="eyebrow">Digital Marketing &amp; Data Analyst · New Cairo, Egypt</p>
         <h1>I turn campaign data into marketing decisions.</h1>
         <p class="lead">Data-driven digital marketing specialist: KPI analytics, AI-generated video ads, and e-commerce campaigns.</p>
+        <ul class="tags" aria-label="Core tools">
+          <li>Power BI</li><li>Excel</li><li>Google Flow</li><li>Salla</li>
+        </ul>
         <div class="actions">
           <a class="btn" href="#work">View my work</a>
           <!-- TODO: confirm WhatsApp number -->
@@ -64,7 +71,7 @@
           <a class="btn btn-outline" href="assets/cv/Goda_Emad_CV.pdf" download>Download CV</a>
         </div>
         <ul class="stats" aria-label="Key facts">
-          <li><strong>2.5 years</strong><span>in marketing analytics at 3M4Media</span></li>
+          <li><strong>Experience</strong><span>in marketing analytics at 3M4Media</span></li>
           <li><strong>4</strong><span>AI video ads produced</span></li>
           <li><strong>3</strong><span>professional certifications (PL-300, Google Data Analytics, IBM AI Engineering)</span></li>
         </ul>
@@ -74,10 +81,11 @@
     <!-- 2. FEATURED WORK -->
     <section id="work" class="section reveal" aria-labelledby="work-h">
       <div class="container">
+        <p class="kicker">01 · Work</p>
         <h2 id="work-h">Featured work: AI video ads</h2>
         <p class="sub">Made with Google Flow. Personal and portfolio projects.</p>
         <div class="grid video-grid">
-          <!-- TODO for each card: set data-video to the YouTube video ID, and add a thumbnail image in assets/img/ (replace the .thumb div with <img src="assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy">) -->
+          <!-- TODO per card: set data-video to the YouTube video ID; replace .thumb div with <img src="assets/img/thumb-1.jpg" alt="..." width="270" height="480" loading="lazy"> -->
           <article class="card video-card">
             <div class="thumb" role="img" aria-label="Thumbnail placeholder: TikTok Product Ads"><span>Thumbnail</span></div>
             <div class="card-body">
@@ -121,6 +129,7 @@
     <!-- 3. CASE STUDY -->
     <section id="case-study" class="section alt reveal" aria-labelledby="cs-h">
       <div class="container">
+        <p class="kicker">02 · Case study</p>
         <h2 id="cs-h">Case study: Salla dropshipping store</h2>
         <p class="sub">06/2026 · Built and launched in 14 days</p>
         <div class="cs-grid">
@@ -130,7 +139,7 @@
           </div>
           <div class="cs-block">
             <h3>What I did</h3>
-            <ul>
+            <ol class="steps">
               <li>Store setup: domain connection, payment gateways, shipping companies.</li>
               <li>Visual identity: logo, color palette, homepage banners. Theme customization for a smooth UX/UI.</li>
               <li>Product and supplier research with Salla-supported apps.</li>
@@ -138,7 +147,7 @@
               <li>Marketing plan and ad copywriting.</li>
               <li>Paid social media campaigns.</li>
               <li>Performance tracking (ROAS, Conversion Rate) and optimization.</li>
-            </ul>
+            </ol>
           </div>
           <div class="cs-block outcome">
             <h3>Outcome</h3>
@@ -146,7 +155,7 @@
             <!-- TODO: add real numbers here (orders, ROAS) only if you have them. Do not estimate. -->
           </div>
         </div>
-        <!-- TODO: replace the 3 placeholders with real Salla screenshots, e.g. <img src="assets/img/salla-1.jpg" alt="Salla store homepage" width="600" height="400" loading="lazy"> -->
+        <!-- TODO: replace placeholders with real Salla screenshots, e.g. <img src="assets/img/salla-1.jpg" alt="Salla store homepage" width="600" height="400" loading="lazy"> -->
         <div class="gallery" aria-label="Store screenshots">
           <div class="shot" role="img" aria-label="Screenshot placeholder 1"><span>Screenshot 1</span></div>
           <div class="shot" role="img" aria-label="Screenshot placeholder 2"><span>Screenshot 2</span></div>
@@ -158,6 +167,7 @@
     <!-- 4. ANALYTICS -->
     <section id="analytics" class="section reveal" aria-labelledby="an-h">
       <div class="container">
+        <p class="kicker">03 · Analytics</p>
         <h2 id="an-h">Analytics &amp; dashboards</h2>
         <p class="sub">Supporting projects.</p>
         <div class="grid two">
@@ -185,6 +195,7 @@
     <!-- 5. EXPERIENCE -->
     <section id="experience" class="section alt reveal" aria-labelledby="ex-h">
       <div class="container">
+        <p class="kicker">04 · Experience</p>
         <h2 id="ex-h">Experience</h2>
         <ol class="timeline">
           <li>
@@ -216,31 +227,24 @@
     <!-- 6. SKILLS -->
     <section id="skills" class="section reveal" aria-labelledby="sk-h">
       <div class="container">
+        <p class="kicker">05 · Skills</p>
         <h2 id="sk-h">Skills &amp; tools</h2>
         <div class="skill-groups">
           <div>
             <h3>Marketing &amp; Performance Analytics</h3>
-            <ul class="chips">
-              <li>KPI Monitoring</li><li>Campaign Performance Analysis (ROAS, CPA, CTR, Conversion Rate)</li><li>Customer Segmentation</li><li>Forecasting</li><li>Automated Reporting</li>
-            </ul>
+            <ul class="chips"><li>KPI Monitoring</li><li>Campaign Performance Analysis (ROAS, CPA, CTR, Conversion Rate)</li><li>Customer Segmentation</li><li>Forecasting</li><li>Automated Reporting</li></ul>
           </div>
           <div>
             <h3>E-commerce &amp; Digital Marketing</h3>
-            <ul class="chips">
-              <li>Salla</li><li>Dropshipping</li><li>Product Research</li><li>Ad Copywriting</li><li>Store Setup &amp; Optimization</li><li>Brand Identity</li><li>AI Video Ads (Google Flow)</li>
-            </ul>
+            <ul class="chips"><li>Salla</li><li>Dropshipping</li><li>Product Research</li><li>Ad Copywriting</li><li>Store Setup &amp; Optimization</li><li>Brand Identity</li><li>AI Video Ads (Google Flow)</li></ul>
           </div>
           <div>
             <h3>Analytics &amp; BI</h3>
-            <ul class="chips">
-              <li>Power BI</li><li>Excel (Advanced)</li><li>DAX</li><li>Power Query</li><li>Tableau</li><li>SQL</li><li>Python</li>
-            </ul>
+            <ul class="chips"><li>Power BI</li><li>Excel (Advanced)</li><li>DAX</li><li>Power Query</li><li>Tableau</li><li>SQL</li><li>Python</li></ul>
           </div>
           <div>
             <h3>AI tools</h3>
-            <ul class="chips">
-              <li>Generative AI</li><li>Prompt Engineering</li><li>AI Workflow Automation</li><li>ChatGPT</li><li>Claude</li>
-            </ul>
+            <ul class="chips"><li>Generative AI</li><li>Prompt Engineering</li><li>AI Workflow Automation</li><li>ChatGPT</li><li>Claude</li></ul>
           </div>
         </div>
       </div>
@@ -249,6 +253,7 @@
     <!-- 7. CERTIFICATIONS -->
     <section id="certs" class="section alt reveal" aria-labelledby="ce-h">
       <div class="container">
+        <p class="kicker">06 · Certifications</p>
         <h2 id="ce-h">Certifications</h2>
         <ul class="certs">
           <li><span>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</span><time>Jul 2026</time></li>
@@ -263,6 +268,7 @@
     <!-- 8. CONTACT -->
     <section id="contact" class="section contact reveal" aria-labelledby="co-h">
       <div class="container">
+        <p class="kicker">07 · Contact</p>
         <h2 id="co-h">Contact</h2>
         <p class="lead">Open to Marketing Specialist roles in Saudi Arabia.</p>
         <p class="sub">Languages: Arabic (native), English (professional working proficiency).</p>
@@ -279,21 +285,20 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container foot">
       <p>© <span id="year">2026</span> Goda Emad</p>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp (mobile) -->
   <a class="fab" href="https://wa.me/201126242932" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
 
-  <!-- Video modal: iframe is created only on click -->
   <dialog id="videoModal" aria-labelledby="modalTitle">
     <div class="modal-head">
       <h3 id="modalTitle"></h3>
       <button class="close" id="closeModal" aria-label="Close video">×</button>
     </div>
-    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-body" id="modalBody" data-soon="Video coming soon."></div>
   </dialog>
 
   <script src="assets/js/main.js" defer></script>
