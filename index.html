@@ -44,7 +44,7 @@
   function openVideo(trigger) {
     var id = trigger.getAttribute('data-video') || '';
     lastTrigger = trigger;
-    title.innerHTML = trigger.getAttribute('data-title') || '';
+    title.textContent = trigger.getAttribute('data-title') || '';
     body.textContent = '';
     // TODO: replace the YOUTUBE_ID_x placeholders in index.html with real video IDs
     if (!id || id.indexOf('YOUTUBE_ID') === 0) {
